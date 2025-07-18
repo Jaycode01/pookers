@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans);
 }
+
+.font-poppins {
+  font-family: var(--font-poppins-hero);
+}

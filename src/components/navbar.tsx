@@ -19,7 +19,7 @@ export default function Navbar() {
         <div
           className={`${
             openMenu ? "flex" : "hidden"
-          } flex flex-col md:flex-row items-center gap-14 absolute md:relative z-40 bg-white md:bg-inherit w-full md:w-fit left-0 top-[105px] md:top-0 border md:border-none border-gray-200 shadow-md md:shadow-none py-5 md:py-0`}
+          } md:flex flex-col md:flex-row items-center gap-14 absolute md:relative z-40 bg-white md:bg-inherit w-full md:w-fit left-0 top-[105px] md:top-0 border md:border-none border-gray-200 shadow-md md:shadow-none py-5 md:py-0`}
         >
           <li className="relative group w-max cursor-pointer list-none">
             <Link href="/" className="text-lg">
