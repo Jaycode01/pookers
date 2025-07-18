@@ -21,7 +21,7 @@ const marqueeTexts = [
 
 export default function Marquee() {
   return (
-    <div className="bg-white pt-9">
+    <div className="bg-white">
       <div className="relative overflow-hidden bg-white py-7 md:py-14 mt-10">
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-gray-200 to-transparent" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-l from-gray-200 to-transparent" />
