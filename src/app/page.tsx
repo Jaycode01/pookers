@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
 import Service from "@/components/service";
+import Value from "@/components/value";
 import React from "react";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Service />
+      <Value />
     </div>
   );
 }

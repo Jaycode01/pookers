@@ -1,0 +1,82 @@
+import { Briefcase, Globe, GraduationCap, MicVocal } from "lucide-react";
+import React from "react";
+
+export default function Value() {
+  return (
+    <>
+      <div className="mt-16">
+        <div className="relative w-full">
+          <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
+            Why Choose Us
+          </h1>
+          <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins">
+            Why Choose Us
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 px-[5%] mt-8 md:mt-16">
+          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+              <MicVocal size={50} />
+              <h2 className="text-gray-900 text-[20px] md:text-[25px]">
+                Speech Writing
+              </h2>
+            </div>
+            <p className="text-sm md:text-[16px]">
+              Whether {`you're`} preparing for a graduation, a corporate pitch,
+              a wedding toast, or a keynote address, we can help you deliver
+              speeches that captivate, inspire, and leave a lasting impression.
+              Our team combines emotional intelligence, effective rhetorical
+              techniques, and a keen awareness of your audience to create
+              powerful speeches tailored to your unique voice and purpose.
+            </p>
+          </div>
+          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+              <Briefcase size={50} />
+              <h2 className="text-gray-900 text-[20px] md:text-[25px]">
+                Employment Service
+              </h2>
+            </div>
+            <p className="text-sm md:text-[16px]">
+              Helping You Stand Out in the Job Market From tailored CVs and
+              compelling cover letters to job interview prep and personal
+              branding, we equip you with the tools you need to confidently
+              pursue and secure your dream job. Our goal is to present you as
+              the best candidate — on paper and in person.
+            </p>
+          </div>
+          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+              <GraduationCap size={50} />
+              <h2 className="text-gray-900 text-[20px] md:text-[25px]">
+                Literary Training
+              </h2>
+            </div>
+            <p className="text-sm md:text-[16px]">
+              Our intensive literary training programs are designed to refine
+              your writing, editing, and storytelling skills. Whether {`you're`}{" "}
+              an aspiring author, student, or professional, we offer practical
+              lessons, expert feedback, and real-world exercises to help you
+              write with clarity, creativity, and confidence.
+            </p>
+          </div>
+          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+              <Globe size={50} />
+              <h2 className="text-gray-900 text-[20px] md:text-[25px]">
+                Web Content
+              </h2>
+            </div>
+            <p className="text-sm md:text-[16px]">
+              We craft SEO-friendly, engaging, and audience-focused web content
+              that helps you inform, sell, and connect. Whether {`it's`} landing
+              pages, service descriptions, or blogs, our writing is tailored to
+              boost visibility and drive user action—ensuring your website
+              speaks your {`brand's`} voice clearly and professionally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

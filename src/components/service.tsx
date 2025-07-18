@@ -17,14 +17,14 @@ export default function Service() {
     <>
       <div className="py-10">
         <div className="relative w-full">
-          <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20">
+          <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
             Our Services
           </h1>
-          <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7">
+          <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins">
             Our Services
           </h2>
         </div>
-        <div className="px-[3%] flex flex-col md:flex-row justify-between mt-10 h-[770px]">
+        <div className="px-[3%] flex flex-col md:flex-row justify-between mt-10 h-fit md:h-[770px]">
           <div className="w-full md:w-1/2 flex flex-col gap-5">
             <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <Brain size={35} />
