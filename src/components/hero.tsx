@@ -49,21 +49,21 @@ export default function Hero() {
         <div className="absolute z-20 bg-white w-[95%] md:w-fit mx-auto shadow-lg border border-gray-200 top-[80%] md:top-[75%] py-5 md:py-10 px-5 md:px-7 flex md:flex-row items-center justify-center gap-7 md:gap-14 rounded-md ml-0 md:ml-20">
           <div className="flex flex-col gap-2">
             <p className="text-[20px]">160</p>
-            <p className="flex flex-row items-center gap-2.5 uppercase text-sm">
+            <p className="flex flex-row items-center gap-2.5 uppercase text-[12px]">
               <File />
               <span>cases done</span>
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-[20px]">120+</p>
-            <p className="flex flex-row items-center gap-2.5 uppercase text-sm">
+            <p className="flex flex-row items-center gap-2.5 uppercase text-[12px]">
               <Users />
               <span>satisfied customers</span>
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-[20px]">7+</p>
-            <p className="flex flex-row items-center gap-2.5 uppercase text-sm">
+            <p className="flex flex-row items-center gap-2.5 uppercase text-[12px]">
               <Award />
               <span>years of experience</span>
             </p>
