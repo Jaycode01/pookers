@@ -1,3 +1,4 @@
+import Essence from "@/components/essence";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
 import Service from "@/components/service";
@@ -11,6 +12,7 @@ export default function Home() {
       <Marquee />
       <Service />
       <Value />
+      <Essence />
     </div>
   );
 }
