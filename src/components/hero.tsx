@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="bg-gray-100 px-[2.5%] md:px-[5%] py-5 md:py-10 text-gray-900 w-full pb-24 md:pb-0">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Left Text Block */}
-          <div className="w-full md:w-1/2 flex flex-col gap-3 pt-5 md:pt-[3%]">
+          <div className="w-full md:w-1/2 flex flex-col gap-3 pt-5">
             <h1 className="text-[30px] md:text-[40px] font-poppins">
               Struggling with writting? {`We've`} got you covered
             </h1>
@@ -17,14 +17,13 @@ export default function Hero() {
               <p>
                 Our dedicated team of experienced editors and writers is
                 committed to helping you articulate your ideas with precision
-                and impact...
-              </p>
-              <p>
-                We understand the importance of clear communication and are here
-                to ensure your work engages your audience effectively...
+                and impact. Whether you are working on an academic thesis,
+                crafting a compelling business proposal, or developing a
+                creative manuscript, we provide personalized support tailored to
+                your specific needs.
               </p>
             </div>
-            <div className="flex flex-row gap-6 mt-5">
+            <div className="flex flex-row gap-4 md:gap-6 mt-5">
               <button
                 type="button"
                 className="bg-orange-600 px-8 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
