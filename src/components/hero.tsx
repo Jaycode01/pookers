@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-gray-100 px-[2.5%] md:px-[5%] py-10 text-gray-900 w-full pb-20 md:pb-0">
+      <div className="bg-gray-100 px-[2.5%] md:px-[5%] py-5 md:py-10 text-gray-900 w-full pb-24 md:pb-0">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Left Text Block */}
           <div className="w-full md:w-1/2 flex flex-col gap-3 pt-5 md:pt-[3%]">
@@ -27,13 +27,13 @@ export default function Hero() {
             <div className="flex flex-row gap-6 mt-5">
               <button
                 type="button"
-                className="bg-orange-600 px-10 py-4 text-white text-[15px]"
+                className="bg-orange-600 px-8 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
               >
                 See Our Work
               </button>
               <button
                 type="button"
-                className="text-orange-600 border text-[15px] border-orange-600 px-10 py-3.5 flex flex-row items-center gap-2"
+                className="text-orange-600 border text-[15px] border-orange-600 px-8 md:px-10 py-3 md:py-3.5 flex flex-row items-center gap-2"
               >
                 Contact Us
                 <ChevronRight />
@@ -50,7 +50,7 @@ export default function Hero() {
 
       {/*  Credibility Section*/}
       <div
-        className="z-20 bg-white w-[90%] md:w-fit ml-[5%] md:ml-[10%] shadow-lg border border-gray-200 
+        className="z-20 bg-white w-[95%] md:w-fit ml-[2.5%] md:ml-[10%] shadow-lg border border-gray-200 
           py-5 md:py-10 px-5 md:px-7 flex flex-row  justify-start
           gap-7 md:gap-14 rounded-md -mt-14 md:-mt-20"
       >
