@@ -1,5 +1,6 @@
 import CTA from "@/components/cta";
 import Essence from "@/components/essence";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
 import Service from "@/components/service";
@@ -17,6 +18,7 @@ export default function Home() {
       <Essence />
       <Testimonial />
       <CTA />
+      <Footer />
     </div>
   );
 }
