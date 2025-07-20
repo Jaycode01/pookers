@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Original_Surfer, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-
 const original_surfer = Original_Surfer({
   variable: "--font-geist-sans",
   subsets: ["latin"],

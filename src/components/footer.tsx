@@ -47,7 +47,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex gap-2 md:gap-5 justify-center w-full text-sm">
+        <div className="flex items-center gap-1.5 md:gap-3.5 justify-center w-full text-sm">
           <p className="flex flex-row items-center gap-1">
             <Copyright />
             <span>2025, Pookers.</span>
