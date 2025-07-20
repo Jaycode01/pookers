@@ -28,20 +28,14 @@ export default function Navbar() {
             <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
           <li className="relative group w-max cursor-pointer list-none">
-            <Link href="/" className="text-lg">
-              Services
+            <Link href="/about" className="text-lg">
+              About Us
             </Link>
             <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
           <li className="relative group w-max cursor-pointer list-none">
             <Link href="/" className="text-lg">
               Contact Us
-            </Link>
-            <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
-          </li>
-          <li className="relative group w-max cursor-pointer list-none">
-            <Link href="/" className="text-lg">
-              About Us
             </Link>
             <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
