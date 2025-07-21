@@ -3,12 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 import Pookers from "../../public/images/pooker.png";
 
 export default function Navbar() {
   const [openMenu, setopenMenu] = useState(false);
+  const [openDropdown, setopenDropdown] = useState(false);
 
   return (
     <>
@@ -39,6 +40,41 @@ export default function Navbar() {
             </Link>
             <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
+          <div className="relative">
+            <li
+              className="relative group w-max cursor-pointer list-none"
+              onClick={() => setopenDropdown(!openDropdown)}
+            >
+              <button
+                type="button"
+                className="text-lg flex flex-row gap-1 items-center"
+              >
+                Get Started
+                <ChevronDown />
+              </button>
+              <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+            </li>
+            {openDropdown && (
+              <ul className="absolute z-20 w-36 text-sm bg-white shadow-md border border-gray-300 p-2 flex flex-col gap-1.5 left-0 top-10">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-gray-700 hover:underline cursor-pointer"
+                  >
+                    Request Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/"
+                    className="text-gray-700  hover:underline cursor-pointer"
+                  >
+                    Join Team
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </div>
         </div>
         <div className="block md:hidden">
           {openMenu ? (
