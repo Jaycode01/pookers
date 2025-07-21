@@ -1,3 +1,4 @@
+import Books from "@/components/books";
 import CTA from "@/components/cta";
 import Essence from "@/components/essence";
 import Footer from "@/components/footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <Service />
       <Value />
       <Essence />
+      <Books />
       <Testimonial />
       <CTA />
       <Footer />
