@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RequestService() {
+export default function JoinTeam() {
   return (
     <>
       <div className="flex flex-col justify-center items-center py-[5%]">
@@ -33,16 +33,7 @@ export default function RequestService() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="location">Location:</label>
-            <input
-              type="text"
-              id="location"
-              className="border px-5 py-3 outline-none text-sm"
-              placeholder="Lagos, Nigeria"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="nature">Nature of work:</label>
+            <label htmlFor="nature">Area of Strength/Interest:</label>
             <select
               id="nature"
               className="border px-2 py-3 outline-none text-sm"
@@ -52,26 +43,44 @@ export default function RequestService() {
             </select>
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="nature_specify">Nature of Work(Specify):</label>
+            <label htmlFor="genre">Genre of Writing:</label>
             <input
               type="text"
-              id="nature_specify"
+              id="genre"
               className="border px-5 py-3 outline-none text-sm"
               placeholder="Cover Letter, Statement of Purpose, e.t.c"
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="deadline">Deadline:</label>
+            <label htmlFor="experience">Years of Experience:</label>
             <input
-              type="date"
-              id="deadline"
+              type="number"
+              id="experience"
               className="border px-5 py-3 outline-none text-sm"
             />
           </div>
-          <textarea
-            className="border px-5 py-3 outline-none text-sm h-[200px] w-full"
-            placeholder="Other Informations"
-          />
+          <div className="flex flex-col gap-2">
+            <label htmlFor="cv">Upload CV:</label>
+            <input
+              type="file"
+              id="cv"
+              className="border px-5 py-3 outline-none text-sm"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label>Best Two Previous Works:</label>
+            <div className="flex flex-row justify-between gap-2 w-full border p-3">
+              <input
+                type="file"
+                className="border px-5 py-3 outline-none text-sm w-[50%]"
+                accept="*.pdf"
+              />
+              <input
+                type="file"
+                className="border px-5 py-3 outline-none text-sm w-[50%]"
+              />
+            </div>
+          </div>
           <button
             type="submit"
             className="text-white text-sm bg-orange-600 hover:bg-orange-500 w-full text-center py-3"

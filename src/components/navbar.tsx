@@ -66,7 +66,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/apply"
                     className="text-gray-700  hover:underline cursor-pointer"
                   >
                     Join Team
