@@ -7,7 +7,6 @@ export default function JoinTeam() {
           method="POST"
           className="w-[95%] md:w-[40%] flex flex-col gap-5"
         >
-          <input type="hidden" name="_next" value="https://yourdomain.com/" />
           <div className="flex flex-col gap-2">
             <label htmlFor="name">Name:</label>
             <input
@@ -49,8 +48,11 @@ export default function JoinTeam() {
               className="border px-2 py-3 outline-none text-sm"
               required
             >
-              <option value="writing">Writing</option>
-              <option value="editing">Editing</option>
+              <option value="none" defaultValue="none">
+                Choose your strength
+              </option>
+              <option value="Writing">Writing</option>
+              <option value="Editing">Editing</option>
             </select>
           </div>
           <div className="flex flex-col gap-2">
