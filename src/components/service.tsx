@@ -9,10 +9,7 @@ import {
   NotebookPen,
 } from "lucide-react";
 import React from "react";
-import Image from "next/image";
 import { FaLaptopFile } from "react-icons/fa6";
-import PhotoOne_Service from "../../public/images/photo1_service.jpg";
-import PhotoTwo_Service from "../../public/images/photo2_service.jpg";
 
 export default function Service() {
   return (
@@ -113,15 +110,15 @@ export default function Service() {
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-1 h-full px-[2.5%] mt-8 md:mt-0">
             <div className="flex-1 overflow-hidden">
-              <Image
-                src={PhotoOne_Service}
+              <img
+                src="/images/photo1_service.jpg"
                 alt="Services Image One"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="flex-1 overflow-hidden">
-              <Image
-                src={PhotoTwo_Service}
+              <img
+                src="/images/photo2_service.jpg"
                 alt="Services Image Two"
                 className="w-full h-full object-cover"
               />

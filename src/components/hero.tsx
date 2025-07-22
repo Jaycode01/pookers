@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Photo_Hero from "../../public/illustration_hero.svg";
 import { Award, ChevronRight, File, Users } from "lucide-react";
 
 export default function Hero() {
@@ -42,7 +40,11 @@ export default function Hero() {
 
           {/* Hero Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center mt-7 md:mt-0">
-            <Image src={Photo_Hero} alt="hero image for pookers" width={650} />
+            <img
+              src="/images/illustration_hero.svg"
+              alt="hero image for pookers"
+              width={650}
+            />
           </div>
         </div>
       </div>

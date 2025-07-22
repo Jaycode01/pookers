@@ -1,11 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
-
-import Pookers from "../../public/images/pooker.png";
 
 export default function Navbar() {
   const [openMenu, setopenMenu] = useState(false);
@@ -14,7 +11,12 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-row justify-between items-center px-5 md:px-14 py-6.5 md:py-10 bg-white shadow-md w-full relative">
-        <Image src={Pookers} alt="pookers logo" width={120} height={120} />
+        <img
+          src="/images/pooker.png"
+          alt="pookers logo"
+          width={120}
+          height={120}
+        />
 
         {/* List Items */}
         <div

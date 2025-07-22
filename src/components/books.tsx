@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Books() {
@@ -18,7 +17,7 @@ export default function Books() {
       </div>
       <div className="grid gric-cols-4 px-[5%] py-12">
         <div className="w-[95%] mx-auto md:mx-0 md:w-[400px] border p-5 border-gray-300 flex flex-col gap-3 rounded-md">
-          <Image
+          <img
             src="/images/photo_books_one.png"
             alt="book image"
             width={200}

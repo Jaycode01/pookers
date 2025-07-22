@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Avatar_Male from "../../public/images/photo_avatar_male.jpeg";
-import Avatar_Female from "../../public/images/photo_avatar_female.png";
 import { Quote } from "lucide-react";
 
 export default function Testimonial() {
@@ -33,8 +30,8 @@ export default function Testimonial() {
               Literary & Editing World
             </p>
             <div className="mt-5 flex items-center gap-2.5">
-              <Image
-                src={Avatar_Male}
+              <img
+                src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -61,8 +58,8 @@ export default function Testimonial() {
               have found great comfort. They are indeed solution providers.
             </p>
             <div className="mt-5 flex items-center gap-2">
-              <Image
-                src={Avatar_Female}
+              <img
+                src="/images/photo_avatar_female.png"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -86,8 +83,8 @@ export default function Testimonial() {
               internationally
             </p>
             <div className="mt-5 flex flex-row gap-2 items-center">
-              <Image
-                src={Avatar_Female}
+              <img
+                src="/images/photo_avatar_female.png"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -113,8 +110,8 @@ export default function Testimonial() {
               and opinions for my company. The training was absolutely worth it.
             </p>
             <div className="mt-5 flex flex-row items-center gap-2">
-              <Image
-                src={Avatar_Male}
+              <img
+                src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -136,8 +133,8 @@ export default function Testimonial() {
               Pookers was my hope when I had none
             </p>
             <div className="mt-5 flex flex-row items-center gap-2">
-              <Image
-                src={Avatar_Female}
+              <img
+                src="/images/photo_avatar_female.png"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5 h-fit"
               />
@@ -165,8 +162,8 @@ export default function Testimonial() {
               writer
             </p>
             <div className="mt-5 flex flex-row gap-2 items-center">
-              <Image
-                src={Avatar_Female}
+              <img
+                src="/images/photo_avatar_female.png"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -187,8 +184,8 @@ export default function Testimonial() {
               the best! writer
             </p>
             <div className="mt-5 flex flex-row gap-2 items-center">
-              <Image
-                src={Avatar_Male}
+              <img
+                src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />
@@ -219,8 +216,8 @@ export default function Testimonial() {
               the next level.
             </p>
             <div className="mt-5 flex flex-row gap-2 items-center">
-              <Image
-                src={Avatar_Female}
+              <img
+                src="/images/photo_avatar_female.png"
                 alt="customer avatar"
                 className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
               />

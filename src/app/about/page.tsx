@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { CircleCheckBig, House } from "lucide-react";
 import Footer from "@/components/footer";
 
@@ -8,10 +7,9 @@ export default function About() {
     <>
       <div>
         <section className="relative h-[250px] md:h-[400px]">
-          <Image
+          <img
             src="/images/photo_bg_about.jpg"
             alt="about page top bg image"
-            fill
             style={{ objectFit: "cover" }}
           />
           <div className="absolute inset-0 bg-black/80"></div>
@@ -78,7 +76,7 @@ export default function About() {
             </div>
           </div>
           <div className="h-[400px]">
-            <Image
+            <img
               src="/images/photo_about.avif"
               alt="about us photo"
               width={600}
