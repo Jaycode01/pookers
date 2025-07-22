@@ -3,7 +3,7 @@ export default function JoinTeam() {
     <>
       <div className="flex flex-col justify-center items-center py-[5%]">
         <form
-          action="https://formsubmit.co/josephlamidijoslam@gmail.com"
+          action="https://formsubmit.co/pookerseditorial@gmail.com"
           method="POST"
           className="w-[95%] md:w-[40%] flex flex-col gap-5"
         >

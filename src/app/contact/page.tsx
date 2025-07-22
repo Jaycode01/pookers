@@ -29,26 +29,34 @@ export default function Contact() {
       <section className="text-gray-600 mt-20 px-[5%] flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-[65%]">
           <h1 className="text-xl md:text-2xl uppercase">send us a message</h1>
-          <form className="flex flex-col gap-5 mt-5">
+          <form
+            action="https://formsubmit.co/pookerseditorial@gmail.com"
+            method="POST"
+            className="flex flex-col gap-5 mt-5"
+          >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
               />
               <input
                 type="email"
                 placeholder="Your Email"
+                name="email"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
               />
               <input
                 type="tel"
+                name="phone_number"
                 placeholder="Phone Number"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
               />
             </div>
             <textarea
               placeholder="Your Message"
+              name="message"
               className="border border-gray-500 text-inherit p-3 text-sm outline-none h-[150px] md:h-[250px]"
             />
             <button
