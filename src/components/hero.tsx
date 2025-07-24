@@ -1,6 +1,15 @@
+"use client";
+
 import { Award, ChevronRight, File, Users } from "lucide-react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Hero() {
+  const router = useRouter();
+
+  const redirectContact = () => {
+    router.push("/contact");
+  };
   return (
     <>
       {/* Hero Section */}
@@ -22,14 +31,17 @@ export default function Hero() {
               </p>
             </div>
             <div className="flex flex-row gap-4 md:gap-6 mt-5">
+              <Link href="#editted-books">
+                <button
+                  type="button"
+                  className="bg-orange-600 px-8 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
+                >
+                  See Our Work
+                </button>
+              </Link>
               <button
                 type="button"
-                className="bg-orange-600 px-8 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
-              >
-                See Our Work
-              </button>
-              <button
-                type="button"
+                onClick={redirectContact}
                 className="text-orange-600 border text-[15px] border-orange-600 px-8 md:px-10 py-3 md:py-3.5 flex flex-row items-center gap-2"
               >
                 Contact Us

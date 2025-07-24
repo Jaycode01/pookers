@@ -21,13 +21,13 @@ export default function Footer() {
             <h2 className="text-[18px] font-semibold">Company</h2>
             <ul className="flex flex-col gap-1 md:gap-1.5 text-sm">
               <li className="">
-                <Link href="/">About Us</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li className="">
-                <Link href="/">Our Services</Link>
+                <Link href="/request">Request Services</Link>
               </li>
               <li className="">
-                <Link href="/">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -36,13 +36,17 @@ export default function Footer() {
             <h2 className="text-[18px] font-semibold">Social Handles</h2>
             <ul className="flex flex-col gap-1 md:gap-1.5 text-sm">
               <li className="">
-                <Link href="/">Instagram</Link>
+                <Link href="https://www.instagram.com/pookersworld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  Instagram
+                </Link>
               </li>
               <li className="">
-                <Link href="/">Twitter</Link>
+                <Link href="https://x.com/pookersworld">Twitter</Link>
               </li>
               <li className="">
-                <Link href="/">Facebook</Link>
+                <Link href="https://facebook.com/pookerseditorial">
+                  Facebook
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,7 +58,10 @@ export default function Footer() {
           </p>
           <p className="">
             Built with 🤍 by{" "}
-            <Link href="/" className="text-white">
+            <Link
+              href="mailto:josephlamidijoslam@gmail.com"
+              className="text-white"
+            >
               Nexon
             </Link>
           </p>
