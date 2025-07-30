@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+  font-family: "JosefinSans";
+  src: url("/fonts/Merriweather-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
 }
 
 :root {
@@ -30,7 +35,7 @@
 body {
   background: var(--background);
   color: #0a0a0a;
-  font-family: "Poppins";
+  font-family: "JosefinSans";
 }
 
 ::selection {
@@ -58,6 +63,10 @@ body {
   background: var(--_g) 50% 0, var(--_g) 0 100%, var(--_g) 100% 100%;
   background-size: 35% calc(35% * 1.154);
   animation: l16 1s infinite;
+}
+
+.poppins {
+  font-family: "Poppins";
 }
 
 @keyframes l16 {

@@ -61,7 +61,7 @@ export default function Contact() {
             />
             <button
               type="submit"
-              className="text-left bg-orange-500 w-fit px-7  py-3 text-white text-sm"
+              className="text-left bg-blue-500 w-fit px-7  py-3 text-white text-sm"
             >
               Send Message
             </button>

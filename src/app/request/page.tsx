@@ -87,7 +87,7 @@ export default function RequestService() {
           />
           <button
             type="submit"
-            className="text-white text-sm bg-orange-600 hover:bg-orange-500 w-full text-center py-3"
+            className="text-white text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
           >
             Send Request
           </button>

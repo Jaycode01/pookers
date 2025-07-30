@@ -10,10 +10,9 @@ export default function About() {
           <img
             src="/images/photo_bg_about.jpg"
             alt="about page top bg image"
-            style={{ objectFit: "cover" }}
+            className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/80"></div>
-          <div className="relative z-10 text-white flex flex-col gap-5 justify-center pl-10 h-full">
+          <div className="absolute inset-0 bg-black/80 text-white flex flex-col gap-5 justify-center pl-10 h-full">
             <p className="text-white text-[15px] flex flex-row items-center">
               <House size={17} />
               <span className="pl-1.5">Pookers /</span>
@@ -28,7 +27,7 @@ export default function About() {
           <div className="w-[90%] mx-auto md:mx-0 md:w-[40%]">
             <div className="flex flex-col gap-5">
               <h1 className="uppercase text-2xl">
-                <span className="border-b-4 border-orange-600 pb-1">abo</span>ut
+                <span className="border-b-4 border-blue-600 pb-1">abo</span>ut
                 us
               </h1>
               <p className="">
@@ -53,23 +52,23 @@ export default function About() {
               <h2 className="text-xl font-semibold">Our Edges:</h2>
               <ul className="mt-2 flex flex-col gap-2">
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#FB8C00" }} />
+                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
                   <span>Premium Quality Writing</span>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#FB8C00" }} />
+                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
                   <span>Client-Centric Approach</span>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#FB8C00" }} />
+                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
                   <span>Quick Turnaround</span>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#FB8C00" }} />
+                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
                   <span>Versatile Expertise</span>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#FB8C00" }} />
+                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
                   <span>Guaranteed Privacy & Ownership</span>
                 </li>
               </ul>
