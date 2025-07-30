@@ -34,7 +34,7 @@ export default function Hero() {
               <Link href="#editted-books">
                 <button
                   type="button"
-                  className="bg-orange-600 px-8 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
+                  className="bg-blue-600 px-6 md:px-10 py-3.5 md:py-4 text-white text-[15px]"
                 >
                   See Our Work
                 </button>
@@ -42,7 +42,7 @@ export default function Hero() {
               <button
                 type="button"
                 onClick={redirectContact}
-                className="text-orange-600 border text-[15px] border-orange-600 px-8 md:px-10 py-3 md:py-3.5 flex flex-row items-center gap-2"
+                className="text-blue-600 border text-[15px] border-blue-600 px-6 md:px-10 py-3 md:py-3.5 flex flex-row items-center gap-2"
               >
                 Contact Us
                 <ChevronRight />
@@ -69,21 +69,21 @@ export default function Hero() {
       >
         <div className="flex flex-col gap-2 items-center">
           <p className="text-[20px] font-semibold">160</p>
-          <p className="flex flex-row items-center gap-2.5 uppercase text-[12px] text-gray-600">
+          <p className="flex flex-row items-center gap-2.5 uppercase text-[11px] text-gray-600">
             <File />
             <span>cases done</span>
           </p>
         </div>
         <div className="flex flex-col gap-2 items-center">
           <p className="text-[20px] font-semibold">120+</p>
-          <p className="flex flex-row items-center gap-2.5 uppercase text-[12px] text-gray-600">
+          <p className="flex flex-row items-center gap-2.5 uppercase text-[11px] text-gray-600">
             <Users />
             <span>satisfied customers</span>
           </p>
         </div>
         <div className="flex flex-col gap-2 items-center">
           <p className="text-[20px] font-semibold">7+</p>
-          <p className="flex flex-row items-center gap-2.5 uppercase text-[12px] text-gray-600">
+          <p className="flex flex-row items-center gap-2.5 uppercase text-[11px] text-gray-600">
             <Award />
             <span>years of experience</span>
           </p>

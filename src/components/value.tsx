@@ -15,7 +15,7 @@ export default function Value() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 px-[5%] mt-8 md:mt-16">
           <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
-            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <MicVocal size={50} />
               <h2 className="text-gray-900 text-[20px] md:text-[25px]">
                 Speech Writing
@@ -31,7 +31,7 @@ export default function Value() {
             </p>
           </div>
           <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
-            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <Briefcase size={50} />
               <h2 className="text-gray-900 text-[20px] md:text-[25px]">
                 Employment Service
@@ -46,7 +46,7 @@ export default function Value() {
             </p>
           </div>
           <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
-            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <GraduationCap size={50} />
               <h2 className="text-gray-900 text-[20px] md:text-[25px]">
                 Literary Training
@@ -61,9 +61,9 @@ export default function Value() {
             </p>
           </div>
           <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
-            <div className="text-orange-600 flex flex-col justify-center items-center gap-2">
+            <div className="text-blue-600 flex flex-col justify-center items-center gap-2">
               <Globe size={50} />
-              <h2 className="text-gray-900 text-[20px] md:text-[25px]">
+              <h2 className="text-gray-900 text-[20px] md:text-[25px] font-semibold">
                 Web Content
               </h2>
             </div>

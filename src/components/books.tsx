@@ -36,7 +36,7 @@ export default function Books() {
           <Link
             href="https://selar.com/u22241"
             target="_blank"
-            className="w-full bg-orange-600 text-white text-sm text-center py-3 cursor-pointer hover:bg-orange-500"
+            className="w-full bg-blue-600 text-white text-sm text-center py-3 cursor-pointer hover:bg-blue-500"
           >
             Buy Now
           </Link>

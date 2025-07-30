@@ -25,7 +25,7 @@ export default function Service() {
         </div>
         <div className="px-[3%] flex flex-col md:flex-row justify-between mt-10 h-fit md:h-[770px]">
           <div className="w-full md:w-1/2 flex flex-col gap-5">
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <Brain size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">Research</h3>
@@ -36,7 +36,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <BookOpen size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -49,7 +49,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <FaLaptopFile size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -62,7 +62,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <Compass size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -75,7 +75,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <File size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">CV & Cover Letter</h3>
@@ -85,7 +85,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <NotebookPen size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">Blurb Writing</h3>
@@ -96,7 +96,7 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-orange-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
               <GraduationCap size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">

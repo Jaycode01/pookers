@@ -10,7 +10,7 @@ export default function CTA() {
           </h2>
           <button
             type="button"
-            className=" bg-orange-600 px-7 py-3 text-white hover:bg-orange-500 w-fit"
+            className=" bg-blue-600 px-7 py-3 text-white hover:bg-blue-500 w-fit"
           >
             Get Started
           </button>
@@ -29,7 +29,7 @@ export default function CTA() {
             />
             <button
               type="submit"
-              className="px-10 py-3 bg-orange-600 text-white text-sm"
+              className="px-10 py-3 bg-blue-600 text-white text-sm"
             >
               Subscribe
             </button>

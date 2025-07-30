@@ -11,12 +11,12 @@ export default function EdittedBooks() {
       >
         <div className="flex flex-row justify-between px-[2%]">
           <h2 className=" text-[22px] md:text-[30px]">
-            <span className="border-b-2 border-orange-600">Recent</span>ly
-            editted books.
+            <span className="border-b-2 border-blue-600">Recent</span>ly editted
+            books.
           </h2>
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-orange-600 hover:underline"
+            className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-blue-600 hover:underline"
           >
             View more <ArrowRight size={18} />
           </Link>

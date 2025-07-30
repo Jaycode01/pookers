@@ -28,19 +28,19 @@ export default function Navbar() {
             <Link href="/" className="text-lg">
               Home
             </Link>
-            <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+            <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
           <li className="relative group w-max cursor-pointer list-none">
             <Link href="/about" className="text-lg">
               About Us
             </Link>
-            <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+            <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
           <li className="relative group w-max cursor-pointer list-none">
             <Link href="/contact" className="text-lg">
               Contact
             </Link>
-            <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+            <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
           <div className="relative">
             <li
@@ -54,7 +54,7 @@ export default function Navbar() {
                 Get Started
                 {openDropdown ? <ChevronUp /> : <ChevronDown />}
               </button>
-              <span className="absolute bottom-0 left-0 h-[2px] bg-orange-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+              <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
             </li>
             {openDropdown && (
               <ul className="relative md:absolute z-0 md:z-20 w-36 text-sm bg-inherit  md:bg-white shadow-none md:shadow-md border-none md:border border-gray-300 p-2 flex flex-col gap-1.5 left-0 top-2 md:top-10">

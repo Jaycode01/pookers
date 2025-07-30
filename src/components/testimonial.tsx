@@ -33,7 +33,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-0.5">
@@ -61,7 +61,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_female.png"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-0.5">
@@ -86,7 +86,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_female.png"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-0.5">
@@ -113,7 +113,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-0.5">
@@ -136,7 +136,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_female.png"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5 h-fit"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5 h-fit"
               />
 
               <p className="flex flex-col gap-0.5">
@@ -165,7 +165,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_female.png"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-1.5">
@@ -187,7 +187,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_male.jpeg"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-1.5">
@@ -219,7 +219,7 @@ export default function Testimonial() {
               <img
                 src="/images/photo_avatar_female.png"
                 alt="customer avatar"
-                className="border-2 border-orange-600 rounded-full w-[50px] p-1.5"
+                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
               />
 
               <p className="flex flex-col gap-1.5">
