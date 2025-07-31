@@ -17,7 +17,7 @@ export default function CTA() {
         </div>
         <div className="flex flex-col gap-5">
           <h3 className="text-[18px] md:text-[25px]">
-            Subscribe to our newsletter for writting and services updates
+            Subscribe to our newsletter for writting and services tips
           </h3>
           <form className="flex flex-row gap-0 border border-gray-600 w-full md:w-[80%]">
             <input
