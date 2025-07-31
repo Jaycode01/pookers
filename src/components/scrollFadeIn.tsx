@@ -32,7 +32,7 @@ export default function ScrollFadeIn({
       ref={ref}
       initial={initial}
       animate={animate}
-      transition={{ duration: 1, delay, ease: "easeOut" }}
+      transition={{ duration: 0.6, delay, ease: "easeOut" }}
     >
       {children}
     </motion.div>
