@@ -115,6 +115,14 @@ export default function Contact() {
           </ul>
         </div>
       </section>
+      <div className="ml-[5%] mt-7 flex gap-5 text-blue-600 text-sm">
+        <Link href="/request" className="hover:underline">
+          Request Service
+        </Link>
+        <Link href="/apply" className="hover:underline">
+          Join Team
+        </Link>
+      </div>
       <section className="w-full mt-10 md:mt-20">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.10123624524!2d3.376178175847342!3d6.50886832333144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c58aef0ab5f%3A0x35d0d9dce060b34e!2s5%20Birrel%20Ave%2C%20Onike%2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1753044670209!5m2!1sen!2sng"

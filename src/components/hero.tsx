@@ -20,7 +20,7 @@ export default function Hero() {
             <h1 className="text-[30px] md:text-[40px] poppins">
               Struggling with writting? {`We've`} got you covered
             </h1>
-            <div className="text-[15px] md:text-[17px] flex flex-col gap-1">
+            <div className="text-[15px] md:text-[16px] flex flex-col gap-1">
               <p>
                 Our dedicated team of experienced editors and writers is
                 committed to helping you articulate your ideas with precision

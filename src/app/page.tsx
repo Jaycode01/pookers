@@ -1,7 +1,6 @@
 import Books from "@/components/books";
 import CTA from "@/components/cta";
 import EdittedBooks from "@/components/editted-books";
-import Essence from "@/components/essence";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
@@ -18,7 +17,6 @@ export default function Home() {
       <Marquee />
       <Service />
       <Value />
-      <Essence />
       <Books />
       <EdittedBooks />
       <Testimonial />

@@ -24,7 +24,7 @@ export default function CTA() {
               type="email"
               name=""
               id=""
-              className="outline-none px-5 py-3 w-full text-sm"
+              className="outline-none px-5 py-3 w-full text-[12px]"
               placeholder="Input your email to subscribe"
             />
             <button
