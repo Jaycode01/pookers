@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Books() {
   return (
     <>
-      <div className="relative w-full mx-">
+      <div className="relative w-full mt-10">
         <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
           Our Books
         </h1>

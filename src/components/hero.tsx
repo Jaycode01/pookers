@@ -1,7 +1,6 @@
 "use client";
 
 import { Award, ChevronRight, File, Users } from "lucide-react";
-import ScrollFadeIn from "./scrollFadeIn";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -18,22 +17,17 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Left Text Block */}
           <div className="w-full md:w-1/2 flex flex-col gap-3 pt-5">
-            <ScrollFadeIn>
-              {" "}
-              <h1 className="text-[30px] md:text-[40px] poppins">
-                Struggling with writting? {`We've`} got you covered
-              </h1>
-            </ScrollFadeIn>
-            <ScrollFadeIn>
-              <p className="text-[15px] md:text-[16px]">
-                Our dedicated team of experienced editors and writers is
-                committed to helping you articulate your ideas with precision
-                and impact. Whether you are working on an academic thesis,
-                crafting a compelling business proposal, or developing a
-                creative manuscript, we provide personalized support tailored to
-                your specific needs.
-              </p>
-            </ScrollFadeIn>
+            {" "}
+            <h1 className="text-[30px] md:text-[40px] poppins">
+              Struggling with writting? {`We've`} got you covered
+            </h1>
+            <p className="text-[15px] md:text-[16px]">
+              Our dedicated team of experienced editors and writers is committed
+              to helping you articulate your ideas with precision and impact.
+              Whether you are working on an academic thesis, crafting a
+              compelling business proposal, or developing a creative manuscript,
+              we provide personalized support tailored to your specific needs.
+            </p>
             <div className="flex flex-row gap-4 md:gap-6 mt-5">
               <Link href="#editted-books">
                 <button
@@ -56,14 +50,12 @@ export default function Hero() {
 
           {/* Hero Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center mt-7 md:mt-0">
-            <ScrollFadeIn zoom>
-              {" "}
-              <img
-                src="/images/illustration_hero.svg"
-                alt="hero image for pookers"
-                width={650}
-              />
-            </ScrollFadeIn>
+            {" "}
+            <img
+              src="/images/illustration_hero.svg"
+              alt="hero image for pookers"
+              width={650}
+            />
           </div>
         </div>
       </div>
