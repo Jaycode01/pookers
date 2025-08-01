@@ -16,17 +16,26 @@ export default function Service() {
     <>
       <div className="py-10">
         <div className="relative w-full">
-          <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
+          <h1
+            data-aos="fade-right"
+            className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins"
+          >
             Our Services
           </h1>
-          <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins">
+          <h2
+            data-aos="fade-up"
+            className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins"
+          >
             Our Services
           </h2>
         </div>
 
         <div className="px-[3%] flex flex-col md:flex-row justify-between mt-10 h-fit md:h-[770px] items-stretch">
           <div className="w-full md:w-1/2 flex flex-col gap-6">
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <Brain size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">Research</h3>
@@ -37,7 +46,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <BookOpen size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -50,7 +62,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <FaLaptopFile size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -63,7 +78,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <Compass size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -76,7 +94,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <File size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">CV & Cover Letter</h3>
@@ -86,7 +107,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <NotebookPen size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">Blurb Writing</h3>
@@ -97,7 +121,10 @@ export default function Service() {
               </div>
             </div>
 
-            <div className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0">
+            <div
+              data-aos="fade-up"
+              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
+            >
               <GraduationCap size={35} />
               <div className="">
                 <h3 className="text-[18px] font-[500]">
@@ -110,7 +137,7 @@ export default function Service() {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-1 h-full px-[2.5%] mt-8 md:mt-0">
-            <div className="flex-1 overflow-hidden">
+            <div data-aos="zoom-in" className="flex-1 overflow-hidden">
               <img
                 src="/images/photo1_service.jpg"
                 alt="Services Image One"
@@ -118,7 +145,7 @@ export default function Service() {
               />
             </div>
 
-            <div className="flex-1 overflow-hidden">
+            <div data-aos="zoom-in" className="flex-1 overflow-hidden">
               <img
                 src="/images/photo2_service.jpg"
                 alt="Services Image Two"

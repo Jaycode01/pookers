@@ -8,15 +8,24 @@ export default function Value() {
     <>
       <div className="mt-16">
         <div className="relative w-full">
-          <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
+          <h1
+            data-aos="fade-right"
+            className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins"
+          >
             Why Choose Us
           </h1>
-          <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins">
+          <h2
+            data-aos="fade-up"
+            className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins"
+          >
             Why Choose Us
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 px-[5%] mt-8 md:mt-16">
-          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+          <div
+            data-aos="fade-up"
+            className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center"
+          >
             <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <MicVocal size={50} />
               <h2 className="text-gray-900 text-[18px] md:text-[23px]">
@@ -33,7 +42,11 @@ export default function Value() {
             </p>
           </div>
 
-          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center"
+          >
             <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <Briefcase size={50} />
               <h2 className="text-gray-900 text-[18px] md:text-[23px]">
@@ -49,7 +62,11 @@ export default function Value() {
             </p>
           </div>
 
-          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="600"
+            className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center"
+          >
             <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
               <GraduationCap size={50} />
               <h2 className="text-gray-900 text-[18px] md:text-[23px]">
@@ -65,7 +82,11 @@ export default function Value() {
             </p>
           </div>
 
-          <div className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="900"
+            className="bg-white shadow-md border border-gray-200 p-7 flex flex-col gap-5 text-center justify-center items-center"
+          >
             <div className="text-blue-600 flex flex-col justify-center items-center gap-2">
               <Globe size={50} />
               <h2 className="text-gray-900 text-[18px] md:text-[23px] font-semibold">

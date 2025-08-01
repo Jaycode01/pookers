@@ -5,18 +5,27 @@ export default function Books() {
   return (
     <>
       <div className="relative w-full mt-10">
-        <h1 className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins">
+        <h1
+          data-aos="fade-right"
+          className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins"
+        >
           Our Books
         </h1>
-        <h2 className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins">
+        <h2
+          data-aos="fade-up"
+          className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins"
+        >
           Explore Our Books
         </h2>
-        <p className="italic pl-[2%]">
+        <p data-aos="fade-up" data-aos-delay="200" className="italic pl-[2%]">
           Carefully curated books to help you grow and succeed.
         </p>
       </div>
       <div className="grid gric-cols-4 px-[5%] py-12">
-        <div className="w-[95%] mx-auto md:mx-0 md:w-[400px] border p-5 border-gray-300 flex flex-col gap-3 rounded-md">
+        <div
+          data-aos="fade-up"
+          className="w-[95%] mx-auto md:mx-0 md:w-[400px] border p-5 border-gray-300 flex flex-col gap-3 rounded-md"
+        >
           <img
             src="/images/photo_books_one.png"
             alt="book image"

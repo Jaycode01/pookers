@@ -7,7 +7,10 @@ export default function Essence() {
     <>
       <div className="bg-gray-100 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 px-[5%] py-7 md:py-12">
-          <div className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300">
+          <div
+            data-aos="fade-up"
+            className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300"
+          >
             <div className="flex flex-col items-center justify-center">
               <Eye
                 size={30}
@@ -31,7 +34,11 @@ export default function Essence() {
             </p>
           </div>
 
-          <div className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300"
+          >
             <div className="flex flex-col items-center justify-center">
               <Goal
                 size={30}
@@ -49,7 +56,11 @@ export default function Essence() {
               writing errors in social, corporate and academic space.
             </p>
           </div>
-          <div className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300"
+          >
             <div className="flex flex-col items-center justify-center">
               <ShieldCheck
                 size={30}
@@ -92,7 +103,10 @@ export default function Essence() {
             </div>
           </div>
         </div>
-        <p className="italic flex justify-end w-full pr-[5%] text-sm md:text-[16px]">
+        <p
+          data-aos="flip-left"
+          className="italic flex justify-end w-full pr-[5%] text-sm md:text-[16px]"
+        >
           - Error-free writing is our priority
         </p>
       </div>

@@ -7,13 +7,16 @@ export default function Testimonial() {
       <div className="overflow-hidden w-full bg-gray-100 py-10 flex flex-col gap-16">
         <div className="mt-20 flex flex-col gap-2 justify-center items-center w-[90%] md:w-[40%] text-center mx-auto">
           <button
+            data-aos="zoom-in"
             type="button"
             className="text-sm border border-gray-600 py-3 px-7 rounded-md text-gray-600"
           >
             Testimonials
           </button>
-          <h2 className="text-[22px] md:text-[40px]">Our Success Story</h2>
-          <p className="text-[15px] md:text-[17px]">
+          <h2 data-aos="fade-up" className="text-[22px] md:text-[40px]">
+            Our Success Story
+          </h2>
+          <p data-aos="fade-up" className="text-[15px] md:text-[17px]">
             Real feedback from real clients who we have helped on their projects
             and ideas with our writing and editing service.
           </p>
