@@ -79,7 +79,7 @@ export default function JoinTeam() {
             <input
               type="url"
               id="cv"
-              name="cv_url"
+              name="cv"
               className="border px-5 py-3 outline-none text-sm"
               required
             />

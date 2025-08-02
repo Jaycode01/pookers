@@ -66,7 +66,7 @@ export default function RequestService() {
             <input
               type="text"
               id="nature_specify"
-              name="nature_of_work(specify)"
+              name="nature_of_work_specify"
               className="border px-5 py-3 outline-none text-sm"
               placeholder="Cover Letter, Statement of Purpose, e.t.c"
             />
