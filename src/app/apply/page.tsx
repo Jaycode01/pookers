@@ -16,7 +16,9 @@ export default function JoinTeam() {
     message: "",
   });
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setformData((prev) => ({
       ...prev,
@@ -62,6 +64,7 @@ export default function JoinTeam() {
               type="email"
               id="email"
               name="email"
+              onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
               placeholder="nexon@dev.com"
               required
@@ -73,6 +76,7 @@ export default function JoinTeam() {
               type="tel"
               id="phone"
               name="phoneNumber"
+              onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
               placeholder="+234 90 000 000 0000"
               required
@@ -83,6 +87,7 @@ export default function JoinTeam() {
             <select
               id="nature"
               name="strength"
+              onChange={handleChange}
               className="border px-2 py-3 outline-none text-sm"
               required
             >
@@ -98,6 +103,7 @@ export default function JoinTeam() {
             <input
               type="text"
               id="genre"
+              onChange={handleChange}
               name="genre"
               className="border px-5 py-3 outline-none text-sm"
             />
@@ -107,6 +113,7 @@ export default function JoinTeam() {
             <input
               type="number"
               id="experience"
+              onChange={handleChange}
               name="years_of_experience"
               className="border px-5 py-3 outline-none text-sm"
               required
@@ -118,6 +125,7 @@ export default function JoinTeam() {
               type="file"
               id="cv"
               name="cv"
+              onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
               required
             />
@@ -127,12 +135,14 @@ export default function JoinTeam() {
             <div className="flex flex-row justify-between gap-2 w-full border p-3">
               <input
                 type="url"
+                onChange={handleChange}
                 className="border px-5 py-3 outline-none text-sm w-[50%]"
                 name="prev_work1_url"
                 required
               />
               <input
                 type="url"
+                onChange={handleChange}
                 className="border px-5 py-3 outline-none text-sm w-[50%]"
                 name="prev_work2_url"
                 required
