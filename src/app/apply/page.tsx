@@ -1,10 +1,47 @@
+"use client";
+
+import { useState } from "react";
 export default function JoinTeam() {
+  const [formData, setformData] = useState({
+    formType: "join",
+    name: "",
+    email: "",
+    phoneNumber: "",
+    strength: "",
+    genre: "",
+    years_of_experience: "",
+    cv: "",
+    prev_work1_url: "",
+    prev_work2_url: "",
+    message: "",
+  });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setformData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const res = await fetch("../api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) alert("Sent contact reach out successfully!");
+    else alert("Error sending contact reach out");
+  };
+
   return (
     <>
       <div className="flex flex-col justify-center items-center py-[5%]">
         <form
-          action="https://formsubmit.co/pookerseditorial@gmail.com"
-          method="POST"
+          onSubmit={handleSubmit}
           className="w-[95%] md:w-[40%] flex flex-col gap-5"
         >
           <div className="flex flex-col gap-2">
@@ -14,6 +51,7 @@ export default function JoinTeam() {
               className="border px-5 py-3 outline-none text-sm"
               id="name"
               name="name"
+              onChange={handleChange}
               placeholder="Nexon Nas"
               required
             />
@@ -75,9 +113,9 @@ export default function JoinTeam() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="cv">CV Url:</label>
+            <label htmlFor="cv">CV:</label>
             <input
-              type="url"
+              type="file"
               id="cv"
               name="cv"
               className="border px-5 py-3 outline-none text-sm"
