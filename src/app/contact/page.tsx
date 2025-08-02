@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Footer from "@/components/footer";
 import { Facebook, House, Instagram, Mail, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
@@ -5,6 +8,35 @@ import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
+  const [formData, setformData] = useState({
+    formType: "contact",
+    name: "",
+    email: "",
+    phone_number: "",
+    message: "",
+  });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setformData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const res = await fetch("../api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) alert("Sent contact reach out successfully!");
+    else alert("Error sending contact reach out");
+  };
+
   return (
     <>
       <section className="relative h-[200px] md:h-[400px]">
@@ -29,35 +61,39 @@ export default function Contact() {
       <section className="text-gray-600 mt-20 px-[5%] flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-[65%]">
           <h1 className="text-xl md:text-2xl uppercase">send us a message</h1>
-          <form
-            action="https://formsubmit.co/pookerseditorial@gmail.com"
-            method="POST"
-            className="flex flex-col gap-5 mt-5"
-          >
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5 mt-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
               <input
                 type="text"
                 name="name"
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                required
               />
               <input
                 type="email"
                 placeholder="Your Email"
                 name="email"
+                onChange={handleChange}
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                required
               />
               <input
                 type="tel"
                 name="phone_number"
+                onChange={handleChange}
                 placeholder="Phone Number"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                required
               />
             </div>
             <textarea
               placeholder="Your Message"
               name="message"
+              onChange={handleChange}
               className="border border-gray-500 text-inherit p-3 text-sm outline-none h-[150px] md:h-[250px]"
+              required
             />
             <button
               type="submit"
