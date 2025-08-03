@@ -31,9 +31,11 @@ export default function JoinTeam() {
     e.preventDefault();
     setisSending(true);
 
-    const res = await fetch("../api/send-email", {
+    const res = await fetch("https://pookers.onrender.com/api/send-email", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(formData),
     });
 

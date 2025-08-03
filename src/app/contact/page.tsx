@@ -29,7 +29,7 @@ export default function Contact() {
     e.preventDefault();
     setisSending(true);
 
-    const res = await fetch("http://localhost:5000/api/send-email", {
+    const res = await fetch("https://pookers.onrender.com/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
