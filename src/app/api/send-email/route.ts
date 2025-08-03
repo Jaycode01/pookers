@@ -6,10 +6,15 @@ export async function POST(req: Request) {
   const { formType } = data;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_RECEIVER,
+      pass: process.env.EMAIL_PASS,
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   });
 
@@ -61,9 +66,12 @@ export async function POST(req: Request) {
   }
 
   try {
+    console.log("Sending from:", process.env.EMAIL_USER);
+    console.log("Form type:", formType);
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+      to: process.env.EMAIL_RECEIVER,
       subject: subject,
       html: html,
     });
