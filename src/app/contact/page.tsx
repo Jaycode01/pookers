@@ -29,9 +29,11 @@ export default function Contact() {
     e.preventDefault();
     setisSending(true);
 
-    const res = await fetch("../api/send-email", {
+    const res = await fetch("http://localhost:5000/api/send-email", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(formData),
     });
 
