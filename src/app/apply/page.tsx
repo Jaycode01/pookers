@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 export default function JoinTeam() {
+  const [isSending, setisSending] = useState(false);
   const [formData, setformData] = useState({
     formType: "join",
     name: "",
@@ -28,6 +29,7 @@ export default function JoinTeam() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setisSending(true);
 
     const res = await fetch("../api/send-email", {
       method: "POST",
@@ -35,8 +37,24 @@ export default function JoinTeam() {
       body: JSON.stringify(formData),
     });
 
-    if (res.ok) alert("Sent contact reach out successfully!");
-    else alert("Error sending contact reach out");
+    setisSending(false);
+
+    if (res.ok) {
+      alert("Application to Join Sent Successfull!");
+      setformData({
+        formType: "join",
+        name: "",
+        email: "",
+        phoneNumber: "",
+        strength: "",
+        genre: "",
+        years_of_experience: "",
+        cv: "",
+        prev_work1_url: "",
+        prev_work2_url: "",
+        message: "",
+      });
+    } else alert("Failed to send. Try again later.\nNote: Error not from you.");
   };
 
   return (
@@ -53,6 +71,7 @@ export default function JoinTeam() {
               className="border px-5 py-3 outline-none text-sm"
               id="name"
               name="name"
+              value={formData.name}
               onChange={handleChange}
               placeholder="Nexon Nas"
               required
@@ -64,6 +83,7 @@ export default function JoinTeam() {
               type="email"
               id="email"
               name="email"
+              value={formData.email}
               onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
               placeholder="nexon@dev.com"
@@ -76,6 +96,7 @@ export default function JoinTeam() {
               type="tel"
               id="phone"
               name="phoneNumber"
+              value={formData.phoneNumber}
               onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
               placeholder="+234 90 000 000 0000"
@@ -87,6 +108,7 @@ export default function JoinTeam() {
             <select
               id="nature"
               name="strength"
+              value={formData.strength}
               onChange={handleChange}
               className="border px-2 py-3 outline-none text-sm"
               required
@@ -105,6 +127,7 @@ export default function JoinTeam() {
               id="genre"
               onChange={handleChange}
               name="genre"
+              value={formData.genre}
               className="border px-5 py-3 outline-none text-sm"
             />
           </div>
@@ -115,6 +138,7 @@ export default function JoinTeam() {
               id="experience"
               onChange={handleChange}
               name="years_of_experience"
+              value={formData.years_of_experience}
               className="border px-5 py-3 outline-none text-sm"
               required
             />
@@ -122,11 +146,13 @@ export default function JoinTeam() {
           <div className="flex flex-col gap-2">
             <label htmlFor="cv">CV:</label>
             <input
-              type="file"
+              type="url"
               id="cv"
               name="cv"
+              value={formData.cv}
               onChange={handleChange}
               className="border px-5 py-3 outline-none text-sm"
+              placeholder="Link to CV"
               required
             />
           </div>
@@ -138,6 +164,7 @@ export default function JoinTeam() {
                 onChange={handleChange}
                 className="border px-5 py-3 outline-none text-sm w-[50%]"
                 name="prev_work1_url"
+                value={formData.prev_work1_url}
                 required
               />
               <input
@@ -145,15 +172,17 @@ export default function JoinTeam() {
                 onChange={handleChange}
                 className="border px-5 py-3 outline-none text-sm w-[50%]"
                 name="prev_work2_url"
+                value={formData.prev_work2_url}
                 required
               />
             </div>
           </div>
           <button
+            disabled={isSending}
             type="submit"
             className="text-white text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
           >
-            Send Request
+            {isSending ? "Applying..." : "Apply"}
           </button>
         </form>
       </div>

@@ -8,6 +8,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
+  const [isSending, setisSending] = useState(false);
   const [formData, setformData] = useState({
     formType: "contact",
     name: "",
@@ -26,6 +27,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setisSending(true);
 
     const res = await fetch("../api/send-email", {
       method: "POST",
@@ -33,8 +35,18 @@ export default function Contact() {
       body: JSON.stringify(formData),
     });
 
-    if (res.ok) alert("Sent contact reach out successfully!");
-    else alert("Error sending contact reach out");
+    setisSending(false);
+
+    if (res.ok) {
+      alert("Sent Successfully!");
+      setformData({
+        formType: "contact",
+        name: "",
+        email: "",
+        phone_number: "",
+        message: "",
+      });
+    } else alert("Failed to send. Try again later.\nNote: Error not from you.");
   };
 
   return (
@@ -66,6 +78,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
+                value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
@@ -75,6 +88,7 @@ export default function Contact() {
                 type="email"
                 placeholder="Your Email"
                 name="email"
+                value={formData.email}
                 onChange={handleChange}
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
                 required
@@ -82,6 +96,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone_number"
+                value={formData.phone_number}
                 onChange={handleChange}
                 placeholder="Phone Number"
                 className="border border-gray-500 text-inherit p-3 text-sm outline-none"
@@ -91,15 +106,17 @@ export default function Contact() {
             <textarea
               placeholder="Your Message"
               name="message"
+              value={formData.message}
               onChange={handleChange}
               className="border border-gray-500 text-inherit p-3 text-sm outline-none h-[150px] md:h-[250px]"
               required
             />
             <button
               type="submit"
+              disabled={isSending}
               className="text-left bg-blue-500 w-fit px-7  py-3 text-white text-sm"
             >
-              Send Message
+              {isSending ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
