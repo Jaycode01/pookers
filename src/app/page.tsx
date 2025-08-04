@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/scroll-to-top";
 import Service from "@/components/service";
 import Testimonial from "@/components/testimonial";
 import Value from "@/components/value";
+import WorkSamples from "@/components/work-samples";
 import React from "react";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Service />
       <Value />
       <Books />
+      <WorkSamples />
       <EdittedBooks />
       <Testimonial />
       <CTA />
