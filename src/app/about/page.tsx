@@ -43,13 +43,13 @@ export default function About() {
                 Writing, How to Write Plagiarism-Free Proposals and The Business
                 of Ghostwriting: Monetising Your Writing Skills, among other
                 private, specialised training for interested learners at basic,
-                intermediate and advanced levels. We have trained scores of
+                intermediate and advanced levels. We have also trained scores of
                 writers, who now render high-value writing and editing services
                 at home and abroad.
               </p>
             </div>
             <div className="mt-5">
-              <h2 className="text-xl font-semibold">Our Edges:</h2>
+              <h2 className="text-xl font-semibold">Core Values:</h2>
               <ul className="mt-2 flex flex-col gap-2">
                 <li className="flex flex-row items-center gap-1.5">
                   <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />

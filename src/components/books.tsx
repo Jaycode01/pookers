@@ -18,7 +18,7 @@ export default function Books() {
           Explore Our Books
         </h2>
         <p data-aos="fade-up" data-aos-delay="200" className="italic pl-[2%]">
-          Carefully curated books to help you grow and succeed.
+          Carefully curated books to help you grow and succeeds
         </p>
       </div>
       <div className="grid gric-cols-4 px-[5%] py-12">

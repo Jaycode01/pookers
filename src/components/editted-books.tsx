@@ -12,7 +12,7 @@ export default function EdittedBooks() {
         <div className="flex flex-row justify-between px-[2%]">
           <h2 data-aos="fade-right" className=" text-[22px] md:text-[30px]">
             <span className="border-b-2 border-blue-600">Recent</span>ly edited
-            books.
+            books
           </h2>
           <Link
             href="/"

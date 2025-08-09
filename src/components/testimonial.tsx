@@ -17,8 +17,8 @@ export default function Testimonial() {
             Our Success Story
           </h2>
           <p data-aos="fade-up" className="text-[15px] md:text-[17px]">
-            Real feedback from real clients who we have helped on their projects
-            and ideas with our writing and editing service.
+            Real feedback from real clients whom we have help with writing and
+            editing tasks
           </p>
         </div>
         <div className="flex w-max animate-scroll gap-5 px-5">

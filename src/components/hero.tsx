@@ -77,7 +77,7 @@ export default function Hero() {
           <p className="text-[20px] font-semibold">160</p>
           <p className="flex flex-row items-center gap-2.5 uppercase text-[11px] text-gray-600">
             <File />
-            <span>cases done</span>
+            <span>research papers written</span>
           </p>
         </div>
         <div className="flex flex-col gap-2 items-center">
