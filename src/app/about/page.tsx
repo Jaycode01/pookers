@@ -1,5 +1,5 @@
 import React from "react";
-import { CircleCheckBig, House } from "lucide-react";
+import { Cog, House, Star, Brain } from "lucide-react";
 import Footer from "@/components/footer";
 
 export default function About() {
@@ -52,24 +52,35 @@ export default function About() {
               <h2 className="text-xl font-semibold">Core Values:</h2>
               <ul className="mt-2 flex flex-col gap-2">
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
-                  <span>Premium Quality Writing</span>
+                  <Star />
+                  <p>
+                    <span className="">Originality:</span>
+                    <br />
+                    <span className="">
+                      You can be sure that our writing is plagiarism-free
+                    </span>
+                  </p>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
-                  <span>Client-Centric Approach</span>
+                  <Brain />
+                  <p>
+                    <span>Creativity:</span>
+                    <br />
+                    <span>
+                      Every task is approached with style and elegance
+                    </span>
+                  </p>
                 </li>
                 <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
-                  <span>Quick Turnaround</span>
-                </li>
-                <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
-                  <span>Versatile Expertise</span>
-                </li>
-                <li className="flex flex-row items-center gap-1.5">
-                  <CircleCheckBig size={19} style={{ color: "#2b7fff" }} />
-                  <span>Guaranteed Privacy & Ownership</span>
+                  <Cog size={30} />
+                  <p>
+                    <span>Industry:</span>
+                    <br />
+                    <span>
+                      Our writers and editors are ready to apply themselves and
+                      meet your deadline
+                    </span>
+                  </p>
                 </li>
               </ul>
             </div>
