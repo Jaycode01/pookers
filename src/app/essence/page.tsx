@@ -59,7 +59,7 @@ export default function Essence() {
         </div>
         <p
           data-aos="flip-left"
-          className="italic flex justify-end w-full pr-[5%] text-sm md:text-[16px]"
+          className="italic flex justify-end w-full pr-[5%] text-[10px] md:text-[16px]"
         >
           - Error-free writing is our priority
         </p>

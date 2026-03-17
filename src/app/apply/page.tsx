@@ -19,7 +19,7 @@ export default function JoinTeam() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setformData((prev) => ({
       ...prev,
@@ -70,7 +70,7 @@ export default function JoinTeam() {
             <label htmlFor="name">Name:</label>
             <input
               type="text"
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               id="name"
               name="name"
               value={formData.name}
@@ -87,7 +87,7 @@ export default function JoinTeam() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="nexon@dev.com"
               required
             />
@@ -100,7 +100,7 @@ export default function JoinTeam() {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="+234 90 000 000 0000"
               required
             />
@@ -112,7 +112,7 @@ export default function JoinTeam() {
               name="strength"
               value={formData.strength}
               onChange={handleChange}
-              className="border px-2 py-3 outline-none text-sm"
+              className="border px-2 py-3 outline-none text-[12px] md:text-sm"
               required
             >
               <option value="none" defaultValue="none">
@@ -130,7 +130,7 @@ export default function JoinTeam() {
               onChange={handleChange}
               name="genre"
               value={formData.genre}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -141,7 +141,7 @@ export default function JoinTeam() {
               onChange={handleChange}
               name="years_of_experience"
               value={formData.years_of_experience}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               required
             />
           </div>
@@ -153,7 +153,7 @@ export default function JoinTeam() {
               name="cv"
               value={formData.cv}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="Link to CV"
               required
             />
@@ -164,7 +164,7 @@ export default function JoinTeam() {
               <input
                 type="url"
                 onChange={handleChange}
-                className="border px-5 py-3 outline-none text-sm w-[50%]"
+                className="border px-5 py-3 outline-none text-[12px] md:text-sm w-[50%]"
                 name="prev_work1_url"
                 value={formData.prev_work1_url}
                 required
@@ -172,7 +172,7 @@ export default function JoinTeam() {
               <input
                 type="url"
                 onChange={handleChange}
-                className="border px-5 py-3 outline-none text-sm w-[50%]"
+                className="border px-5 py-3 outline-none text-[12px] md:text-sm w-[50%]"
                 name="prev_work2_url"
                 value={formData.prev_work2_url}
                 required
@@ -182,7 +182,7 @@ export default function JoinTeam() {
           <button
             disabled={isSending}
             type="submit"
-            className="text-white text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
+            className="text-white text-[12px] md:text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
           >
             {isSending ? "Applying..." : "Apply"}
           </button>

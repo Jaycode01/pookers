@@ -22,7 +22,7 @@ export default function RequestService() {
       | HTMLTextAreaElement
       | HTMLSelectElement
       | HTMLTextAreaElement
-    >
+    >,
   ) => {
     setformData((prev) => ({
       ...prev,
@@ -70,7 +70,7 @@ export default function RequestService() {
             <label htmlFor="name">Name:</label>
             <input
               type="text"
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               id="name"
               name="name"
               value={formData.name}
@@ -86,7 +86,7 @@ export default function RequestService() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="nexon@dev.com"
             />
           </div>
@@ -98,7 +98,7 @@ export default function RequestService() {
               name="phone_number"
               value={formData.phone_number}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="+234 90 000 000 0000"
             />
           </div>
@@ -110,7 +110,7 @@ export default function RequestService() {
               name="location"
               value={formData.location}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="Lagos, Nigeria"
             />
           </div>
@@ -121,7 +121,7 @@ export default function RequestService() {
               name="nature_of_work"
               value={formData.nature_of_work}
               onChange={handleChange}
-              className="border px-2 py-3 outline-none text-sm"
+              className="border px-2 py-3 outline-none text-[12px] md:text-sm"
             >
               <option value="default" defaultValue="default"></option>
               <option value="Writing">Writing</option>
@@ -136,7 +136,7 @@ export default function RequestService() {
               onChange={handleChange}
               name="nature_of_work_specify"
               value={formData.nature_of_work_specify}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
               placeholder="Cover Letter, Statement of Purpose, e.t.c"
             />
           </div>
@@ -148,11 +148,11 @@ export default function RequestService() {
               name="deadline"
               value={formData.deadline}
               onChange={handleChange}
-              className="border px-5 py-3 outline-none text-sm"
+              className="border px-5 py-3 outline-none text-[12px] md:text-sm"
             />
           </div>
           <textarea
-            className="border px-5 py-3 outline-none text-sm h-[200px] w-full"
+            className="border px-5 py-3 outline-none text-[12px] md:text-sm h-[200px] w-full"
             name="other_informations"
             value={formData.other_informations}
             onChange={handleChange}
@@ -161,7 +161,7 @@ export default function RequestService() {
           <button
             disabled={isSending}
             type="submit"
-            className="text-white text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
+            className="text-white text-[12px] md:text-sm bg-blue-600 hover:bg-blue-500 w-full text-center py-3"
           >
             {isSending ? "Requesting..." : "Send Request"}
           </button>

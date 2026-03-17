@@ -30,7 +30,7 @@ export default function About() {
                 <span className="border-b-4 border-blue-600 pb-1">abo</span>ut
                 us
               </h1>
-              <p className="">
+              <p className="text-[12px] md:text-sm">
                 Pookers Literary & Editing World was established in 2018 out of
                 the burning desire to create original and error-free writing for
                 local and international clients who value top-quality services.
@@ -54,9 +54,11 @@ export default function About() {
                 <li className="flex flex-row items-center gap-1.5">
                   <Star />
                   <p>
-                    <span className="">Originality:</span>
+                    <span className="font-semibold text-md md:text-lg">
+                      Originality:
+                    </span>
                     <br />
-                    <span className="">
+                    <span className="text-[12px] md:text-sm">
                       You can be sure that our writing is plagiarism-free
                     </span>
                   </p>
@@ -64,9 +66,11 @@ export default function About() {
                 <li className="flex flex-row items-center gap-1.5">
                   <Brain />
                   <p>
-                    <span>Creativity:</span>
+                    <span className="font-semibold text-md md:text-lg">
+                      Creativity:
+                    </span>
                     <br />
-                    <span>
+                    <span className="text-[12px] md:text-sm">
                       Every task is approached with style and elegance
                     </span>
                   </p>
@@ -74,9 +78,11 @@ export default function About() {
                 <li className="flex flex-row items-center gap-1.5">
                   <Cog size={30} />
                   <p>
-                    <span>Industry:</span>
+                    <span className="font-semibold text-md md:text-lg">
+                      Industry:
+                    </span>
                     <br />
-                    <span>
+                    <span className="text-[12px] md:text-sm">
                       Our writers and editors are ready to apply themselves and
                       meet your deadline
                     </span>

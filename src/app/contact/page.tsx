@@ -17,7 +17,7 @@ export default function Contact() {
     message: "",
   });
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setformData((prev) => ({
       ...prev,
@@ -83,7 +83,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                className="border border-gray-500 text-inherit p-3 text-[12px] md:text-sm outline-none"
                 required
               />
               <input
@@ -92,7 +92,7 @@ export default function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                className="border border-gray-500 text-inherit p-3 text-[12px] md:text-sm outline-none"
                 required
               />
               <input
@@ -101,7 +101,7 @@ export default function Contact() {
                 value={formData.phone_number}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="border border-gray-500 text-inherit p-3 text-sm outline-none"
+                className="border border-gray-500 text-inherit p-3 text-[12px] md:text-sm outline-none"
                 required
               />
             </div>
@@ -110,13 +110,13 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="border border-gray-500 text-inherit p-3 text-sm outline-none h-[150px] md:h-[250px]"
+              className="border border-gray-500 text-inherit p-3 text-[12px] md:text-sm outline-none h-[150px] md:h-[250px]"
               required
             />
             <button
               type="submit"
               disabled={isSending}
-              className="text-left bg-blue-500 w-fit px-7  py-3 text-white text-sm"
+              className="text-left bg-blue-500 w-fit px-7  py-3 text-white text-[12px] md:text-sm"
             >
               {isSending ? "Sending..." : "Send Message"}
             </button>
@@ -127,25 +127,34 @@ export default function Contact() {
           <ul className="flex flex-col gap-2.5 mt-5">
             <li className="flex flex-row gap-1.5 items-center">
               <House size={18} />
-              <span>5 Birrel Avenue, Sabo, Yaba, Lagos State</span>
+              <span className="text-sm">
+                5 Birrel Avenue, Sabo, Yaba, Lagos State
+              </span>
             </li>
             <li className="flex flex-row gap-1.5 items-center">
               <Phone size={18} />
-              <span>(+234) 703 009 4966</span>
+              <span className="text-sm">(+234) 703 009 4966</span>
             </li>
             <li className="flex flex-row gap-1.5 items-center">
               <Phone size={18} />
-              <span>(+234) 815 523 6196</span>
+              <span className="text-sm">(+234) 815 523 6196</span>
             </li>
             <li className="flex flex-row gap-1.5 items-center">
               <Mail size={18} />
-              <Link href="mailto:pookerseditorial@gmail.com">
+              <Link
+                href="mailto:pookerseditorial@gmail.com"
+                className="text-sm"
+              >
                 pookerseditorial@gmail.com
               </Link>
             </li>
             <li className="flex flex-row gap-1.5 items-center">
               <Twitter size={18} />
-              <Link href="https://x.com/pookersworld" target="_blank">
+              <Link
+                href="https://x.com/pookersworld"
+                target="_blank"
+                className="text-sm"
+              >
                 pookersworld
               </Link>
             </li>
@@ -154,6 +163,7 @@ export default function Contact() {
               <Link
                 href="https://www.instagram.com/pookersworld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
+                className="text-sm"
               >
                 pookersworld
               </Link>
@@ -163,6 +173,7 @@ export default function Contact() {
               <Link
                 href="https://facebook.com/pookerseditorial"
                 target="_blank"
+                className="text-sm"
               >
                 pookerseditorial
               </Link>
