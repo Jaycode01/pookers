@@ -16,19 +16,56 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pookers</title>
+        <title>
+          Professional Writing & Editing Services in Lagos | Pookers
+        </title>
+
         <meta
           name="description"
-          content="Professional writing and editing service in Yaba, Lagos, Nigeria. We help individuals, businesses and corporations improve their writing skills and create compelling content."
+          content="Professional writing and editing services in Lagos, Nigeria. We help individuals, businesses and organizations improve their writing, editing and content quality."
         />
+
         <meta
           name="keywords"
-          content="writing services lagos, editing services Nigeria, professional writing, content writing, professional editors, business writing lagos, document editing, "
+          content="writing services Lagos, editing services Nigeria, professional editors Lagos, content writing Nigeria, business writing Lagos, document editing services"
         />
-        <link rel="canonical" href="https://pookers.com.ng" />
+
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="Professional Writing & Editing Services | Pookers"
+        />
+        <meta
+          property="og:description"
+          content="Professional writing and editing services in Lagos, Nigeria for businesses, students and organizations."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pookers.com.ng" />
+
+        <link rel="canonical" href="https://pookers.com.ng/" />
+
         <meta name="author" content="Joseph Lamidi - Nexon" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Pookers Writing and Editing Services",
+              url: "https://pookers.com.ng",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Yaba",
+                addressRegion: "Lagos",
+                addressCountry: "Nigeria",
+              },
+            }),
+          }}
+        />
       </Head>
-      <body>
+      <>
         <Hero />
         <Marquee />
         <Service />
@@ -40,7 +77,7 @@ export default function Home() {
         <CTA />
         <Footer />
         <ScrollToTop />
-      </body>
+      </>
     </>
   );
 }
