@@ -30,7 +30,7 @@ export default function Marquee() {
           {[...marqueeTexts, ...marqueeTexts].map((marquee, i) => (
             <span
               key={i}
-              className="px-6 py-2 bg-white text-black rounded-full font-medium text-sm"
+              className="px-6 py-2 bg-white text-black rounded-full font-medium text-[10px] md:text-sm"
             >
               {marquee}
             </span>

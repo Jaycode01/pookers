@@ -10,16 +10,16 @@ export default function EdittedBooks() {
         id="editted-books"
       >
         <div className="flex flex-row justify-between px-[2%]">
-          <h2 data-aos="fade-right" className=" text-[22px] md:text-[30px]">
+          <h2 data-aos="fade-right" className=" text-[20px] md:text-[30px]">
             <span className="border-b-2 border-blue-600">Recent</span>ly edited
             books
           </h2>
           <Link
             href="/"
             data-aos="fade-right"
-            className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-blue-600 hover:underline"
+            className="flex items-center gap-1.5 text-[12px] md:text-sm text-gray-700 hover:text-blue-600 hover:underline"
           >
-            View more <ArrowRight size={18} />
+            View more <ArrowRight size={15} />
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-7 w-full gap-5 px-[5%]">

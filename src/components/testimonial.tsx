@@ -9,14 +9,14 @@ export default function Testimonial() {
           <button
             data-aos="zoom-in"
             type="button"
-            className="text-sm border border-gray-600 py-3 px-7 rounded-md text-gray-600"
+            className="text-[12px] md:text-sm border border-gray-600 py-2 px-5 md:px-7 md:py-3 rounded-md text-gray-600"
           >
             Testimonials
           </button>
-          <h2 data-aos="fade-up" className="text-[22px] md:text-[40px]">
+          <h2 data-aos="fade-up" className="text-[20px] md:text-[35px]">
             Our Success Story
           </h2>
-          <p data-aos="fade-up" className="text-[15px] md:text-[17px]">
+          <p data-aos="fade-up" className="text-[12px] md:text-[17px]">
             Real feedback from real clients whom we have helped with writing and
             editing tasks
           </p>
@@ -26,7 +26,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               Pookers prepared my CV and Cover Letter for a job in a
               multinational company. I {`didn't`} know my CV and Cover Letter
               could be compelling. My career has found essence with Pookers
@@ -49,7 +49,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-[15px]">
+            <p className="text-[12px] md:text-sm">
               After the first publication of my novel, The Secret Killer, I knew
               I needed a professional editor to give it the life and touch it
               needed. Deciding who the editor would be was daunting and held me
@@ -77,7 +77,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               At some point, I needed a booklet with creative content to
               showcase to the world what I do in my NGO focused on restoring
               inmates. The moment I was referred to Pookers, my story became
@@ -102,7 +102,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               I had the IELTS exam to take a month to the virtual Elegant
               Writing Course taught periodically by Oluwasegun Ikuforiji, the
               editor-in-chief of Pookers Literary & Editing World, sometime in
@@ -129,7 +129,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               I had a deadline for submitting a Statement of Purpose in a
               research-intensive university in the UK for master’s admissions. I
               never knew the work could be completed within such a short time.
@@ -152,7 +152,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               I had serious reservations about virtual classes. So, when I was
               informed that the 21-day Elegant Writing Course would be virtual,
               I was scared of enrolling because I preferred physical classes.
@@ -181,7 +181,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               Since I engaged Pookers for weekly reports and articles on my
               youth campaign programmes, the result has been tremendous. You are
               the best! writer
@@ -203,7 +203,7 @@ export default function Testimonial() {
             <div className="flex w-full justify-end text-gray-400">
               <Quote />
             </div>
-            <p className="text-sm">
+            <p className="text-[12px] md:text-sm">
               I recently had the privilege of participating in The Business of
               Ghostwriting training, and it was a truly transformative
               experience. The program was mind-blowing, and I gained invaluable

@@ -5,12 +5,12 @@ export default function CTA() {
     <>
       <div className="bg-white w-full px-[5%] py-14 flex flex-col md:flex-row justify-between items-start gap-7">
         <div className="flex flex-col gap-3">
-          <h2 className="text-[25px] md:text-[35px]">
+          <h2 className="text-[20px] md:text-[35px]">
             Ready to tranform your documents ?
           </h2>
           <button
             type="button"
-            className=" bg-blue-600 px-7 py-3 text-white hover:bg-blue-500 w-fit"
+            className=" bg-blue-600 px-7 py-3  text-[12px] md:text-sm text-white hover:bg-blue-500 w-fit"
           >
             Get Started
           </button>

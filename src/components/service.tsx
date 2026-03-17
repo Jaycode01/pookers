@@ -18,13 +18,13 @@ export default function Service() {
         <div className="relative w-full">
           <h1
             data-aos="fade-right"
-            className="absolute text-gray-300 text-[35px] md:text-[50px] -z-20 font-poppins"
+            className="absolute text-gray-300 text-[27px] md:text-[40px] -z-20 font-poppins"
           >
             Our Services
           </h1>
           <h2
             data-aos="fade-up"
-            className="text-[25px] md:text-[40px] ml-16 md:ml-24 pt-7 font-poppins"
+            className="text-[20px] md:text-[35px] ml-16 md:ml-24 pt-7 font-poppins"
           >
             Our Services
           </h2>
@@ -38,8 +38,10 @@ export default function Service() {
             >
               <Brain size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">Research</h3>
-                <p className="text-sm md:text-sm">
+                <h3 className="md:text-[18px] text-md font-semibold">
+                  Research
+                </h3>
+                <p className="text-[12px] md:text-md">
                   Let our team of experts put a touch of professionalism on your
                   essays, journal articles, etc.
                 </p>
@@ -52,10 +54,10 @@ export default function Service() {
             >
               <BookOpen size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">
+                <h3 className="md:text-[18px] text-md font-semibold">
                   Book Writing/GhostWriting
                 </h3>
-                <p className="text-sm md:text-sm">
+                <p className="text-[12px] md:text-md">
                   We can help you pen that story or idea while you take the
                   credit
                 </p>
@@ -68,10 +70,10 @@ export default function Service() {
             >
               <FaLaptopFile size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">
+                <h3 className="md:text-[18px] text-md font-semibold">
                   Copyediting and Proofreading
                 </h3>
-                <p className="text-sm md:text-sm">
+                <p className="text-[12px] md:text-md">
                   If you want your manuscript free of grammatical, style and
                   content errors, ring us now
                 </p>
@@ -84,10 +86,10 @@ export default function Service() {
             >
               <Compass size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">
+                <h3 className="md:text-[18px] text-md font-semibold">
                   Statement of Purpose/Intent or Letter of Motivation
                 </h3>
-                <p className="text-sm md:text-sm">
+                <p className="text-[12px] md:text-md">
                   With Pookers, you stand a chance of being considered for
                   further studies overseas
                 </p>
@@ -100,8 +102,10 @@ export default function Service() {
             >
               <File size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">CV & Cover Letter</h3>
-                <p className="text-sm md:text-sm">
+                <h3 className="md:text-[18px] text-md font-semibold">
+                  CV & Cover Letter
+                </h3>
+                <p className="text-[12px] md:text-md">
                   Reach out to us for mind-blowing CVs and Cover Letters
                 </p>
               </div>
@@ -113,8 +117,10 @@ export default function Service() {
             >
               <NotebookPen size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">Blurb Writing</h3>
-                <p className="text-sm md:text-sm">
+                <h3 className="md:text-[18px] text-md font-semibold">
+                  Blurb Writing
+                </h3>
+                <p className="text-[12px] md:text-md">
                   We deliver compelling blurbs that generate massive sales for
                   authors
                 </p>
@@ -127,10 +133,10 @@ export default function Service() {
             >
               <GraduationCap size={35} />
               <div className="">
-                <h3 className="text-[18px] font-[500]">
+                <h3 className="md:text-[18px] text-md font-semibold">
                   Intensive Literary Training
                 </h3>
-                <p className="text-sm md:text-sm">
+                <p className="text-[12px] md:text-md">
                   We train people to become better writers and editors
                 </p>
               </div>
