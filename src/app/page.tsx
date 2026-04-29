@@ -10,74 +10,42 @@ import Testimonial from "@/components/testimonial";
 import Value from "@/components/value";
 import WorkSamples from "@/components/work-samples";
 import React from "react";
-import Head from "next/head";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional Writing & Editing Services in Lagos | Pookers",
+  description:
+    "Professional writing and editing services in Lagos, Nigeria. We help individuals, businesses and organizations improve their writing, editing and content quality.",
+  keywords:
+    "writing services Lagos, editing services Nigeria, professional editors Lagos, content writing Nigeria, business writing Lagos, document editing services",
+  robots: "index, follow",
+  authors: [{ name: "Joseph Lamidi - Nexon" }],
+  alternates: {
+    canonical: "https://pookers.com.ng/",
+  },
+  openGraph: {
+    title: "Professional Writing & Editing Services | Pookers",
+    description:
+      "Professional writing and editing services in Lagos, Nigeria for businesses, students and organizations.",
+    type: "website",
+    url: "https://pookers.com.ng",
+  },
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>
-          Professional Writing & Editing Services in Lagos | Pookers
-        </title>
-
-        <meta
-          name="description"
-          content="Professional writing and editing services in Lagos, Nigeria. We help individuals, businesses and organizations improve their writing, editing and content quality."
-        />
-
-        <meta
-          name="keywords"
-          content="writing services Lagos, editing services Nigeria, professional editors Lagos, content writing Nigeria, business writing Lagos, document editing services"
-        />
-
-        <meta name="robots" content="index, follow" />
-
-        <meta
-          property="og:title"
-          content="Professional Writing & Editing Services | Pookers"
-        />
-        <meta
-          property="og:description"
-          content="Professional writing and editing services in Lagos, Nigeria for businesses, students and organizations."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://pookers.com.ng" />
-
-        <link rel="canonical" href="https://pookers.com.ng/" />
-
-        <meta name="author" content="Joseph Lamidi - Nexon" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              name: "Pookers Writing and Editing Services",
-              url: "https://pookers.com.ng",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Yaba",
-                addressRegion: "Lagos",
-                addressCountry: "Nigeria",
-              },
-            }),
-          }}
-        />
-      </Head>
-      <>
-        <Hero />
-        <Marquee />
-        <Service />
-        <Value />
-        <Books />
-        <WorkSamples />
-        <EdittedBooks />
-        <Testimonial />
-        <CTA />
-        <Footer />
-        <ScrollToTop />
-      </>
+      <Hero />
+      <Marquee />
+      <Service />
+      <Value />
+      <Books />
+      <WorkSamples />
+      <EdittedBooks />
+      <Testimonial />
+      <CTA />
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }

@@ -4,7 +4,11 @@ import Navbar from "@/components/navbar";
 import AOSWrapper from "@/components/AOSWrapper";
 
 export const metadata: Metadata = {
-  title: "Pookers",
+  title: {
+    default: "Pookers | Writing & Editing Services",
+    template: "%s | Pookers",
+  },
+  description: "Professional writing and editing services in Lagos, Nigeria.",
 };
 
 export default function RootLayout({
