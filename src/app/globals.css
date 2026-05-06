@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "JosefinSans";
-  src: url("/fonts/Merriweather-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  src: url("/fonts/Roboto Serif.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 :root {
@@ -36,6 +36,7 @@ body {
   background: var(--background);
   color: #0a0a0a;
   font-family: "JosefinSans";
+  font-display: swap;
   font-size: 15px;
 }
 
@@ -71,6 +72,7 @@ body {
 
 .poppins {
   font-family: "Poppins";
+  font-display: swap;
 }
 
 @keyframes l16 {
