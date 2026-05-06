@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function EdittedBooks() {
   return (
@@ -23,32 +24,38 @@ export default function EdittedBooks() {
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-7 w-full gap-5 px-[5%]">
-          <img
+          <Image
+            src={`/images/photo_editted_book_one.avif`}
+            alt="Editted Book"
+            width={100}
+            height={100}
             data-aos="fade-up"
-            src="/images/photo_editted_book_one.jpg"
-            alt="Editted Book One"
             className="w-[95%] mx-auto md:mx-0 md:w-[250px] h-[400px] md:h-[300px]"
           />
-          <img
+
+          <Image
+            src={`/images/photo_editted_book_two.avif`}
+            alt="Editted Book"
+            width={100}
+            height={100}
             data-aos="fade-up"
-            data-aos-delay="300"
-            src="/images/photo_editted_book_two.jpg"
-            alt="Editted Book Two"
             className="w-[95%] mx-auto md:mx-0 md:w-[250px] h-[400px] md:h-[300px]"
           />
-          <img
+          <Image
+            src={`/images/photo_editted_book_three.avif`}
+            alt="Editted Book"
+            width={100}
+            height={100}
             data-aos="fade-up"
-            data-aos-delay="600"
-            src="/images/photo_editted_book_three.jpg"
-            alt="Editted Book Three"
             className="w-[95%] mx-auto md:mx-0 md:w-[250px] h-[400px] md:h-[300px]"
           />
-          <img
+          <Image
+            src={`/images/photo_editted_book_four.avif`}
+            alt="Editted Book"
+            width={100}
+            height={100}
             data-aos="fade-up"
-            data-aos-delay="600"
-            src="/images/photo_editted_book_four.jpg"
-            alt="Editted Book Four"
-            className="w-[95%] mx-auto md:mx-0 md:w-[250px] h-[400px] md:h-[300px] border-2 border-gray-300 p-2"
+            className="w-[95%] mx-auto md:mx-0 md:w-[250px] h-[400px] md:h-[300px]"
           />
         </div>
       </div>

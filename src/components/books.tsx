@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Books() {
   return (
@@ -30,8 +31,8 @@ export default function Books() {
           data-aos="fade-up"
           className="w-[95%] mx-auto md:mx-0 md:w-[400px] border py-5 px-3.5 border-gray-300 flex flex-col gap-3 rounded-md"
         >
-          <img
-            src="/images/photo_books_one.png"
+          <Image
+            src={`/images/photo_books_one.avif`}
             alt="book image"
             width={200}
             height={200}

@@ -3,6 +3,7 @@
 import { Award, ChevronRight, File, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   const router = useRouter();
@@ -55,12 +56,13 @@ export default function Hero() {
 
           {/* Hero Image */}
           <div className="w-full md:w-1/2 flex items-center justify-center mt-7 md:mt-0">
-            {" "}
-            <img
-              data-aos="zoom-out"
-              src="/images/illustration_hero.svg"
+            <Image
+              src={`/images/illustration_hero.svg`}
               alt="hero image for pookers"
               width={650}
+              height={100}
+              data-aos="zoom-out"
+              className="h-auto"
             />
           </div>
         </div>

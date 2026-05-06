@@ -1,17 +1,21 @@
 import React from "react";
 import { Cog, House, Star, Brain } from "lucide-react";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function About() {
   return (
     <>
       <div>
         <section className="relative h-[250px] md:h-[400px]">
-          <img
-            src="/images/photo_bg_about.jpg"
+          <Image
+            src={`/images/photo_bg_about.avif`}
+            width={100}
+            height={100}
             alt="about page top bg image"
             className="h-full w-full object-cover"
           />
+
           <div className="absolute inset-0 bg-black/80 text-white flex flex-col gap-5 justify-center pl-10 h-full">
             <p className="text-white text-[15px] flex flex-row items-center">
               <House size={17} />
@@ -92,8 +96,8 @@ export default function About() {
             </div>
           </div>
           <div className="h-[400px]">
-            <img
-              src="/images/photo_about.avif"
+            <Image
+              src={`/images/photo_about.avif`}
               alt="about us photo"
               width={600}
               height={600}
