@@ -41,6 +41,12 @@ export default function Navbar() {
             </Link>
             <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
           </li>
+          <li className="relative group w-max cursor-pointer list-none">
+            <Link href="/services" className="text-[16px]">
+              Services
+            </Link>
+            <span className="absolute bottom-0 left-0 h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-[500ms]"></span>
+          </li>
           <div className="relative">
             <li className="relative group w-max cursor-pointer list-none">
               <Link href="/essence" className="text-[16px]">
