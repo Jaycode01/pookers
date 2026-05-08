@@ -6,7 +6,7 @@ const Services = () => {
     <>
       <section className="relative h-[200px] md:h-[400px]">
         <Image
-          src="/images/photo_bg_about.jpg"
+          src={`/images/photo_bg_about.jpg`}
           alt="about page top bg image"
           fill
           style={{ objectFit: "cover" }}
