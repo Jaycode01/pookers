@@ -40,7 +40,7 @@ export default function Hero() {
                 <button
                   data-aos="fade-up"
                   type="button"
-                  className="bg-gray-900 text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-85 transition-opacity"
+                  className="bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-85 transition-opacity"
                 >
                   See our work
                 </button>
