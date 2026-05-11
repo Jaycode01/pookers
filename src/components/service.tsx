@@ -15,152 +15,114 @@ import Image from "next/image";
 export default function Service() {
   return (
     <>
-      <div className="py-10">
-        <div className="relative w-full">
-          <h1
-            data-aos="fade-right"
-            className="absolute text-gray-300 text-[27px] md:text-[40px] -z-20 font-poppins"
-          >
-            Our Services
-          </h1>
-          <h2
-            data-aos="fade-up"
-            className="text-[20px] md:text-[35px] ml-16 md:ml-24 pt-7 font-poppins"
-          >
-            Our Services
-          </h2>
+      <div className="bg-[#f7f6f2] py-16 md:py-24 px-[5%]">
+        {/* Section Header */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
+            What we offer
+          </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <h2
+              data-aos="fade-right"
+              className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug max-w-sm"
+            >
+              Our services.
+            </h2>
+            <p className="text-sm text-gray-400 max-w-xs leading-relaxed">
+              From first draft to final polish — we handle every stage of the
+              writing process.
+            </p>
+          </div>
+          <div className="mt-6 h-px bg-gray-200 w-full" />
         </div>
 
-        <div className="px-[3%] flex flex-col md:flex-row justify-between mt-10 h-fit md:h-[770px] items-stretch">
-          <div className="w-full md:w-1/2 flex flex-col gap-6">
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <Brain size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Research
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  Let our team of experts put a touch of professionalism on your
-                  essays, journal articles, etc.
-                </p>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-start">
+          {/* Service List */}
+          <div className="w-full md:w-1/2 flex flex-col divide-y divide-gray-200">
+            {[
+              {
+                icon: Brain,
+                title: "Research",
+                desc: "Expert-level essays, journal articles, and academic papers with a professional touch.",
+              },
+              {
+                icon: BookOpen,
+                title: "Book Writing & Ghostwriting",
+                desc: "We pen your story or idea — you take the credit, fully and rightfully.",
+              },
+              {
+                icon: FaLaptopFile,
+                title: "Copyediting & Proofreading",
+                desc: "Manuscripts free of grammatical, stylistic, and content errors — guaranteed.",
+              },
+              {
+                icon: Compass,
+                title: "Statement of Purpose / Letter of Motivation",
+                desc: "Stand out for overseas admissions with a compelling, tailored SOP.",
+              },
+              {
+                icon: File,
+                title: "CV & Cover Letter",
+                desc: "Mind-blowing CVs and cover letters that open doors.",
+              },
+              {
+                icon: NotebookPen,
+                title: "Blurb Writing",
+                desc: "Compelling blurbs that hook readers and drive sales for authors.",
+              },
+              {
+                icon: GraduationCap,
+                title: "Intensive Literary Training",
+                desc: "We train people to become sharper writers and more confident editors.",
+              },
+            ].map(({ icon: Icon, title, desc }, i) => (
+              <div
+                key={i}
+                data-aos="fade-up"
+                className="group flex flex-row items-start gap-4 py-5 hover:pl-2 transition-all duration-200"
+              >
+                <div className="w-9 h-9 rounded-xl bg-gray-100 group-hover:bg-gray-900 flex items-center justify-center flex-shrink-0 transition-colors duration-200">
+                  <Icon
+                    size={16}
+                    className="text-gray-500 group-hover:text-white transition-colors duration-200"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="font-playfair text-base md:text-lg font-medium text-gray-900 leading-snug">
+                    {title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                    {desc}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <BookOpen size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Book Writing/GhostWriting
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  We can help you pen that story or idea while you take the
-                  credit
-                </p>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <FaLaptopFile size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Copyediting and Proofreading
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  If you want your manuscript free of grammatical, style and
-                  content errors, ring us now
-                </p>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <Compass size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Statement of Purpose/Intent or Letter of Motivation
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  With Pookers, you stand a chance of being considered for
-                  further studies overseas
-                </p>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <File size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  CV & Cover Letter
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  Reach out to us for mind-blowing CVs and Cover Letters
-                </p>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <NotebookPen size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Blurb Writing
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  We deliver compelling blurbs that generate massive sales for
-                  authors
-                </p>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-up"
-              className="flex text-gray-700 flex-row gap-2.5  bg-white border border-gray-200 shadow-md:shadow-lg w-[95%] md:w-[90%] mx-auto p-3 md:p-5 rounded-none md:rounded-lg hover:border-l-4 hover:border-blue-600 hover:border-t-0 hover:border-r-0 hover:border-b-0"
-            >
-              <GraduationCap size={35} />
-              <div className="">
-                <h3 className="md:text-[18px] text-md font-semibold">
-                  Intensive Literary Training
-                </h3>
-                <p className="text-[12px] md:text-md">
-                  We train people to become better writers and editors
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-1 h-full px-[2.5%] mt-8 md:mt-0">
-            <div data-aos="zoom-in" className="flex-1 overflow-hidden">
+
+          {/* Images */}
+          <div className="w-full md:w-1/2 flex flex-col gap-3 h-full sticky top-10">
+            <div
+              data-aos="zoom-in"
+              className="overflow-hidden rounded-2xl flex-1"
+            >
               <Image
-                src={`/images/photo1_service.avif`}
+                src="/images/photo1_service.avif"
                 alt="Services Image One"
-                className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                width={600}
+                height={400}
               />
             </div>
-
-            <div data-aos="zoom-in" className="flex-1 overflow-hidden">
+            <div
+              data-aos="zoom-in"
+              className="overflow-hidden rounded-2xl flex-1"
+            >
               <Image
-                src={`/images/photo2_service.avif`}
+                src="/images/photo2_service.avif"
                 alt="Services Image Two"
-                className="w-full h-full object-cover"
-                width={100}
-                height={100}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                width={600}
+                height={400}
               />
             </div>
           </div>

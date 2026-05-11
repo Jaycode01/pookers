@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.44.0",
     "aos": "^2.3.4",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",

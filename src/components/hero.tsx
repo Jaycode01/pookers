@@ -14,50 +14,53 @@ export default function Hero() {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-gray-100 px-[2.5%] md:px-[5%] py-5 md:py-10 text-gray-900 w-full pb-24 md:pb-0">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="bg-[#f7f6f2] px-[5%] py-14 md:py-20 text-gray-900 w-full pb-28 md:pb-10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
           {/* Left Text Block */}
-          <div className="w-full md:w-1/2 flex flex-col gap-3 pt-3">
-            {" "}
+          <div className="w-full md:w-1/2 flex flex-col gap-5">
+            <p className="text-xs uppercase tracking-widest text-gray-400">
+              Editorial services · Lagos
+            </p>
             <h1
               data-aos="fade-right"
-              className="text-[20px] md:text-[40px] uppercase "
+              className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug"
             >
-              Struggling with writting? {`We've`} got you covered
+              Struggling with writing? We&apos;ve got you covered.
             </h1>
-            <p data-aos="fade-up" className="text-[13px] md:text-[15px]">
-              Our dedicated team of experienced editors and writers is committed
-              to helping you articulate your ideas with precision and impact.
-              Whether you are working on an academic thesis, crafting a
-              compelling business proposal, or developing a creative manuscript,
-              we provide personalized support tailored to your specific needs.
+            <p
+              data-aos="fade-up"
+              className="text-sm md:text-[15px] text-gray-500 leading-relaxed max-w-md"
+            >
+              Our team of experienced editors and writers helps you articulate
+              your ideas with precision and impact — whether it&apos;s an
+              academic thesis, business proposal, or creative manuscript.
             </p>
-            <div className="flex flex-row gap-4 md:gap-6 mt-5">
+            <div className="flex flex-row gap-3 mt-2">
               <Link href="#editted-books">
                 <button
                   data-aos="fade-up"
                   type="button"
-                  className="bg-blue-600 px-6 md:px-10 py-2.5 md:py-4 text-white text-[12px] md:text-[15px]"
+                  className="bg-gray-900 text-white text-sm font-medium px-6 py-3 rounded-lg hover:opacity-85 transition-opacity"
                 >
-                  See Our Work
+                  See our work
                 </button>
               </Link>
               <button
                 data-aos="fade-up"
                 type="button"
                 onClick={redirectContact}
-                className="text-blue-600 border text-[12px] md:text-[15px] border-blue-600 px-6 md:px-10 py-2 md:py-3.5 flex flex-row items-center gap-2"
+                className="text-gray-900 border border-gray-300 text-sm font-medium px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-colors"
               >
-                Contact Us
+                Contact us
                 <ChevronRight size={15} />
               </button>
             </div>
           </div>
 
           {/* Hero Image */}
-          <div className="w-full md:w-1/2 flex items-center justify-center mt-7 md:mt-0">
+          <div className="w-full md:w-1/2 flex items-center justify-center">
             <Image
-              src={`/images/illustration_hero.svg`}
+              src="/images/illustration_hero.svg"
               alt="hero image for pookers"
               width={650}
               height={100}
@@ -68,32 +71,36 @@ export default function Hero() {
         </div>
       </div>
 
-      {/*  Credibility Section*/}
+      {/* Credibility Section */}
       <div
         data-aos="flip-left"
-        className="z-20 bg-white md:w-fit mx-auto w-[95%] md:ml-[10%] shadow-lg border border-gray-200 
-          py-5 md:py-10 px-5 md:px-7 flex flex-col md:flex-row justify-start
-          gap-4 md:gap-14 rounded-md -mt-14 md:-mt-20"
+        className="z-20 bg-white md:w-fit mx-auto w-[90%] md:ml-[10%] shadow-sm border border-gray-100
+    py-6 md:py-8 px-6 md:px-10 flex flex-col md:flex-row justify-start
+    gap-6 md:gap-16 rounded-2xl -mt-10 md:-mt-14"
       >
-        <div className="flex flex-col items-center justify-center">
-          <p className="md:text-[20px] text-md font-semibold uppercase">160</p>
-          <p className="flex flex-row items-center gap-2.5 uppercase text-[9px] md:text-[11px] text-gray-600">
-            <File className="hidden md:block" />
-            <span>research papers written</span>
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-2xl font-playfair font-medium text-gray-900">
+            160
+          </p>
+          <p className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-gray-400">
+            <File size={13} className="hidden md:block" />
+            Research papers written
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <p className="md:text-[20px] text-md font-semibold">120+</p>
-          <p className="flex flex-row items-center gap-2.5 uppercase text-[9px] md:text-[11px] text-gray-600">
-            <Users className="hidden md:block" />
-            <span>satisfied customers</span>
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-2xl font-playfair font-medium text-gray-900">
+            120+
+          </p>
+          <p className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-gray-400">
+            <Users size={13} className="hidden md:block" />
+            Satisfied customers
           </p>
         </div>
-        <div className="flex flex-col items-center">
-          <p className="text-md md:text-[20px] font-semibold">7+</p>
-          <p className="flex flex-row items-center md:gap-2.5 uppercase text-[9px] md:text-[11px] text-gray-600">
-            <Award className="hidden md:block" />
-            <span>years of experience</span>
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-2xl font-playfair font-medium text-gray-900">7+</p>
+          <p className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-gray-400">
+            <Award size={13} className="hidden md:block" />
+            Years of experience
           </p>
         </div>
       </div>
