@@ -1,108 +1,104 @@
 "use client";
 
 import { Briefcase, Globe, GraduationCap, MicVocal } from "lucide-react";
-import React from "react";
+
+const values = [
+  {
+    icon: MicVocal,
+    title: "Speech Writing",
+    desc: "From graduation to keynote — we craft speeches that captivate, inspire, and leave a lasting impression. Tailored to your voice, your audience, and your moment.",
+    tag: "Oratory",
+    tagClass: "bg-blue-50 text-blue-900",
+    iconBg: "bg-blue-50",
+    iconColor: "#185fa5",
+  },
+  {
+    icon: Briefcase,
+    title: "Employment Service",
+    desc: "Tailored CVs, compelling cover letters, and personal branding that present you as the best candidate — on paper and in person.",
+    tag: "Career",
+    tagClass: "bg-amber-50 text-amber-900",
+    iconBg: "bg-amber-50",
+    iconColor: "#854f0b",
+  },
+  {
+    icon: GraduationCap,
+    title: "Literary Training",
+    desc: "Intensive programs that sharpen your writing, editing, and storytelling. Practical lessons, expert feedback, real-world exercises.",
+    tag: "Training",
+    tagClass: "bg-green-50 text-green-900",
+    iconBg: "bg-green-50",
+    iconColor: "#3b6d11",
+  },
+  {
+    icon: Globe,
+    title: "Web Content",
+    desc: "SEO-friendly, audience-focused web copy — landing pages, service descriptions, blogs — that boosts visibility and drives action.",
+    tag: "Digital",
+    tagClass: "bg-pink-50 text-pink-900",
+    iconBg: "bg-pink-50",
+    iconColor: "#993556",
+  },
+];
 
 export default function Value() {
   return (
-    <>
-      <div className="mt-16">
-        <div className="relative w-full">
-          <h1
-            data-aos="fade-right"
-            className="absolute text-gray-300 text-[27px] md:text-[40px] -z-20 font-poppins"
-          >
-            Why Choose Us
-          </h1>
-          <h2
-            data-aos="fade-up"
-            className="text-[20px] md:text-[35px] ml-16 md:ml-24 pt-7 font-poppins"
-          >
-            Why Choose Us
-          </h2>
+    <div className="bg-gray-900 py-16 md:py-24 px-[5%]">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-12">
+          <p className="text-xs uppercase tracking-widest text-white/40 mb-3">
+            Why choose us
+          </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <h2
+              data-aos="fade-right"
+              className="font-playfair text-4xl md:text-5xl font-medium text-white leading-snug max-w-sm"
+            >
+              Built around your words.
+            </h2>
+            <p className="text-sm text-white/40 max-w-xs leading-relaxed">
+              Every service we offer is designed to make your writing work
+              harder for you.
+            </p>
+          </div>
+          <div className="mt-6 h-px bg-white/10 w-full" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-10 px-[5%] mt-8 md:mt-16">
-          <div
-            data-aos="fade-up"
-            className="bg-white shadow-md border border-gray-200 py-5 px-3.5 flex flex-col gap-5 text-center justify-center items-center"
-          >
-            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
-              <MicVocal size={50} />
-              <h2 className="text-gray-900 text-[18px] md:text-[23px]">
-                Speech Writing
-              </h2>
-            </div>
-            <p className="text-[12px] md:text-[15px]">
-              Whether {`you're`} preparing for a graduation, a corporate pitch,
-              a wedding toast, or a keynote address, we can help you deliver
-              speeches that captivate, inspire, and leave a lasting impression.
-              Our team combines emotional intelligence, effective rhetorical
-              techniques, and a keen awareness of your audience to create
-              powerful speeches tailored to your unique voice and purpose.
-            </p>
-          </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="bg-white shadow-md border border-gray-200 py-5 px-3.5 flex flex-col gap-5 text-center justify-center items-center"
-          >
-            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
-              <Briefcase size={50} />
-              <h2 className="text-gray-900 text-[18px] md:text-[23px]">
-                Employment Service
-              </h2>
-            </div>
-            <p className="text-[12px] md:text-[15px]">
-              Helping You Stand Out in the Job Market From tailored CVs and
-              compelling cover letters to job interview prep and personal
-              branding, we equip you with the tools you need to confidently
-              pursue and secure your dream job. Our goal is to present you as
-              the best candidate — on paper and in person.
-            </p>
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            className="bg-white shadow-md border border-gray-200 py-5 px-3.5 flex flex-col gap-5 text-center justify-center items-center"
-          >
-            <div className="text-blue-600 flex flex-col justify-center items-center gap-2 font-semibold">
-              <GraduationCap size={50} />
-              <h2 className="text-gray-900 text-[18px] md:text-[23px]">
-                Literary Training
-              </h2>
-            </div>
-            <p className="text-[12px] md:text-[15px]">
-              Our intensive literary training programs are designed to refine
-              your writing, editing, and storytelling skills. Whether {`you're`}{" "}
-              an aspiring author, student, or professional, we offer practical
-              lessons, expert feedback, and real-world exercises to help you
-              write with clarity, creativity, and confidence.
-            </p>
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="900"
-            className="bg-white shadow-md border border-gray-200 py-5 px-3.5 flex flex-col gap-5 text-center justify-center items-center"
-          >
-            <div className="text-blue-600 flex flex-col justify-center items-center gap-2">
-              <Globe size={50} />
-              <h2 className="text-gray-900 text-[18px] md:text-[23px] font-semibold">
-                Web Content
-              </h2>
-            </div>
-            <p className="text-[12px] md:text-[15px]">
-              We craft SEO-friendly, engaging, and audience-focused web content
-              that helps you inform, sell, and connect. Whether {`it's`} landing
-              pages, service descriptions, or blogs, our writing is tailored to
-              boost visibility and drive user action—ensuring your website
-              speaks your {`brand's`} voice clearly and professionally.
-            </p>
-          </div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {values.map(
+            (
+              { icon: Icon, title, desc, tag, tagClass, iconBg, iconColor },
+              i,
+            ) => (
+              <div
+                key={title}
+                data-aos="fade-up"
+                data-aos-delay={i * 150}
+                className="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col hover:bg-white/10 transition-colors duration-200"
+              >
+                <div
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center mb-5 ${iconBg}`}
+                >
+                  <Icon size={18} color={iconColor} strokeWidth={1.5} />
+                </div>
+                <h3 className="font-playfair text-lg font-medium text-white mb-2 leading-snug">
+                  {title}
+                </h3>
+                <p className="text-xs text-white/50 leading-relaxed flex-1">
+                  {desc}
+                </p>
+                <span
+                  className={`mt-4 self-start text-xs font-medium px-2.5 py-1 rounded-full ${tagClass}`}
+                >
+                  {tag}
+                </span>
+              </div>
+            ),
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 }

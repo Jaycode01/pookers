@@ -4,58 +4,73 @@ import Image from "next/image";
 
 export default function Books() {
   return (
-    <>
-      <div className="relative w-full mt-10">
-        <h1
-          data-aos="fade-right"
-          className="absolute text-gray-300 text-[27px] md:text-[40px] -z-20 font-poppins"
-        >
-          Our Books
-        </h1>
-        <h2
-          data-aos="fade-up"
-          className="text-[20px] md:text-[35px] ml-14 md:ml-24 pt-7 font-poppins"
-        >
-          Explore Our Books
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="italic pl-[2%] mt-5 text-[10px]"
-        >
-          Carefully curated books to help you grow and succeeds
-        </p>
-      </div>
-      <div className="grid gric-cols-4 px-[5%] py-12">
-        <div
-          data-aos="fade-up"
-          className="w-[95%] mx-auto md:mx-0 md:w-[400px] border py-5 px-3.5 border-gray-300 flex flex-col gap-3 rounded-md"
-        >
-          <Image
-            src={`/images/photo_books_one.avif`}
-            alt="book image"
-            width={200}
-            height={200}
-            className="mx-auto w-full h-[300px]"
-          />
-          <h2 className="font-semibold text-[18px] md:text-xl">
-            Learning the Art of Writing in 24hrs
-          </h2>
-          <p className="text-[12px] md:text-sm">
-            An invaluable, experienced-based resource that teaches you how to
-            write, scales up your waning artistry and takes your writing skill
-            to the next level. Learning the Art of Writing in 24hrs is a timely
-            solution to your writing problems.
+    <div className="bg-[#f7f6f2] py-16 md:py-24 px-[5%]">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-12">
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
+            Our books
           </p>
-          <Link
-            href="https://selar.com/u22241"
-            target="_blank"
-            className="w-full bg-blue-600 text-white text-sm text-center py-3 cursor-pointer hover:bg-blue-500"
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <h2
+              data-aos="fade-right"
+              className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug max-w-sm"
+            >
+              Explore our books.
+            </h2>
+            <p
+              data-aos="fade-up"
+              className="text-sm text-gray-400 max-w-xs leading-relaxed italic font-playfair"
+            >
+              Carefully curated books to help you grow and succeed.
+            </p>
+          </div>
+          <div className="mt-6 h-px bg-gray-200 w-full" />
+        </div>
+
+        {/* Book Card */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-14 items-center md:items-start">
+          {/* Cover */}
+          <div
+            data-aos="zoom-in"
+            className="w-full md:w-[300px] flex-shrink-0 overflow-hidden rounded-2xl shadow-lg"
           >
-            Buy Now
-          </Link>
+            <Image
+              src="/images/photo_books_one.avif"
+              alt="Learning the Art of Writing in 24hrs"
+              width={600}
+              height={600}
+              className="w-full h-[360px] object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          {/* Details */}
+          <div data-aos="fade-up" className="flex flex-col gap-5 max-w-lg pt-2">
+            <span className="self-start text-xs font-medium px-2.5 py-1 rounded-full bg-blue-50 text-blue-900">
+              Writing
+            </span>
+            <h3 className="font-playfair text-2xl md:text-3xl font-medium text-gray-900 leading-snug">
+              Learning the Art of Writing in 24hrs
+            </h3>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              An invaluable, experience-based resource that teaches you how to
+              write, scales up your artistry, and takes your writing skill to
+              the next level. A timely solution to your writing problems.
+            </p>
+            <div className="h-px bg-gray-200 w-full" />
+            <div className="flex flex-row gap-4 items-center">
+              <Link
+                href="https://selar.com/u22241"
+                target="_blank"
+                className="bg-blue-600 text-white text-sm font-medium px-7 py-3 rounded-lg hover:opacity-85 transition-opacity"
+              >
+                Buy now
+              </Link>
+              <p className="text-xs text-gray-400">Available on Selar</p>
+            </div>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

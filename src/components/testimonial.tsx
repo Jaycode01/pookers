@@ -1,238 +1,143 @@
 import React from "react";
 import { Quote } from "lucide-react";
 
+const testimonials = [
+  {
+    quote:
+      "Pookers prepared my CV and Cover Letter for a job in a multinational company. I didn't know my CV and Cover Letter could be compelling. My career has found essence with Pookers Literary & Editing World.",
+    name: "Segun Umoru",
+    role: "Client",
+    avatar: "/images/photo_avatar_male.jpeg",
+    tag: "CV & Cover Letter",
+  },
+  {
+    quote:
+      "After the first publication of my novel, The Secret Killer, I knew I needed a professional editor. He and his team actually delivered. Their input in the novel is virtuoso, to say the least. In Pookers, I have found great comfort.",
+    name: "Faith Ozioma Peter Diji",
+    role: "Author, The Secret Killer",
+    avatar: "/images/photo_avatar_female.png",
+    tag: "Book Editing",
+  },
+  {
+    quote:
+      "The moment I was referred to Pookers, my story became different. Through their seasoned writers, our donors have now increased nationally and internationally.",
+    name: "Mrs Amaka",
+    role: "NGO Founder",
+    avatar: "/images/photo_avatar_female.png",
+    tag: "Content Writing",
+  },
+  {
+    quote:
+      "Through the 21-day online extensive training, I brushed up my writing skills and improved my grammar before my IELTS exam. I got a 7. Now I write better business correspondence for my company. Absolutely worth it.",
+    name: "Efe John",
+    role: "Client",
+    avatar: "/images/photo_avatar_male.jpeg",
+    tag: "Literary Training",
+  },
+  {
+    quote:
+      "I had a deadline for submitting a Statement of Purpose for master's admissions in a UK university. I never knew the work could be completed within such a short time. Pookers was my hope when I had none.",
+    name: "Sandra",
+    role: "Client",
+    avatar: "/images/photo_avatar_female.png",
+    tag: "SOP Writing",
+  },
+  {
+    quote:
+      "The training opened my eyes to common mistakes and gave me a thorough grasp of punctuation. I will recommend any Pookers writing course to anyone willing to be an elegant writer.",
+    name: "Titilope Oluwatayo",
+    role: "Client",
+    avatar: "/images/photo_avatar_female.png",
+    tag: "Literary Training",
+  },
+  {
+    quote:
+      "Since I engaged Pookers for weekly reports and articles on my youth campaign programmes, the result has been tremendous. You are the best!",
+    name: "Oludamola Ogidan",
+    role: "Client",
+    avatar: "/images/photo_avatar_male.jpeg",
+    tag: "Content Writing",
+  },
+  {
+    quote:
+      "The Business of Ghostwriting training was truly transformative. One key takeaway was the importance of carving out a writing niche. This training reignited my passion for writing. I wholeheartedly recommend Pookers.",
+    name: "Chioma Okonkwo",
+    role: "Client",
+    avatar: "/images/photo_avatar_female.png",
+    tag: "Ghostwriting",
+  },
+];
+
 export default function Testimonial() {
   return (
-    <>
-      <div className="overflow-hidden w-full bg-gray-100 py-10 flex flex-col gap-16">
-        <div className="mt-20 flex flex-col gap-2 justify-center items-center w-[90%] md:w-[40%] text-center mx-auto">
-          <button
-            data-aos="zoom-in"
-            type="button"
-            className="text-[12px] md:text-sm border border-gray-600 py-2 px-5 md:px-7 md:py-3 rounded-md text-gray-600"
-          >
+    <section className="bg-gray-900 py-16 md:py-24 px-[5%] overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="mb-12">
+          <p className="text-xs uppercase tracking-widest text-white/40 mb-3">
             Testimonials
-          </button>
-          <h2 data-aos="fade-up" className="text-[20px] md:text-[35px]">
-            Our Success Story
-          </h2>
-          <p data-aos="fade-up" className="text-[12px] md:text-[17px]">
-            Real feedback from real clients whom we have helped with writing and
-            editing tasks
           </p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <h2
+              data-aos="fade-right"
+              className="font-playfair text-4xl md:text-5xl font-medium text-white leading-snug max-w-sm"
+            >
+              Our success stories.
+            </h2>
+            <p className="text-sm text-white/40 max-w-xs leading-relaxed">
+              Real feedback from real clients {`we've`} helped with writing and
+              editing.
+            </p>
+          </div>
+          <div className="mt-6 h-px bg-white/10 w-full" />
         </div>
-        <div className="flex w-max animate-scroll gap-5 px-5">
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              Pookers prepared my CV and Cover Letter for a job in a
-              multinational company. I {`didn't`} know my CV and Cover Letter
-              could be compelling. My career has found essence with Pookers
-              Literary & Editing World
-            </p>
-            <div className="mt-5 flex items-center gap-2.5">
-              <img
-                src="/images/photo_avatar_male.jpeg"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
 
-              <p className="flex flex-col gap-0.5">
-                <span className="font-semibold">Segun, Umoru</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              After the first publication of my novel, The Secret Killer, I knew
-              I needed a professional editor to give it the life and touch it
-              needed. Deciding who the editor would be was daunting and held me
-              back for a few years from revising and editing the book. Then, I
-              met Oluwasegun Ikuforiji, the editor-in-chief of Pookers Literary
-              & Editing World. He assured me that the puzzle in my head would be
-              solved. And he and his team actually did. Their input in the novel
-              is virtuoso, to say the least. I’m glad I met them. In Pookers, I
-              have found great comfort. They are indeed solution providers.
-            </p>
-            <div className="mt-5 flex items-center gap-2">
-              <img
-                src="/images/photo_avatar_female.png"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
+        {/* Scrolling ticker */}
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-gray-900 to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-l from-gray-900 to-transparent" />
 
-              <p className="flex flex-col gap-0.5">
-                <span className="font-semibold">Faith Ozioma Peter Diji</span>
-                <span className="text-sm">Author, The Secret Killer</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              At some point, I needed a booklet with creative content to
-              showcase to the world what I do in my NGO focused on restoring
-              inmates. The moment I was referred to Pookers, my story became
-              different. Through the letters and other writing by {`Pookers's`}
-              seasoned writers, our donors have now increased nationally and
-              internationally
-            </p>
-            <div className="mt-5 flex flex-row gap-2 items-center">
-              <img
-                src="/images/photo_avatar_female.png"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
+          <div className="flex w-max animate-scroll gap-4">
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <div
+                key={i}
+                className="w-[340px] bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col gap-4 flex-shrink-0"
+              >
+                {/* Quote icon + tag */}
+                <div className="flex items-center justify-between">
+                  <Quote size={18} className="text-white/20" />
+                  <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/10 text-white/60">
+                    {t.tag}
+                  </span>
+                </div>
 
-              <p className="flex flex-col gap-0.5">
-                <span className="font-semibold">Mrs Amaka</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              I had the IELTS exam to take a month to the virtual Elegant
-              Writing Course taught periodically by Oluwasegun Ikuforiji, the
-              editor-in-chief of Pookers Literary & Editing World, sometime in
-              November 2020. I needed a 7 band score or above to qualify.
-              Through the 21-day online extensive training, I was able to brush
-              up my writing skills and improve on my grammar before the exam.
-              Guess what! I got a 7. Now I write better business correspondence
-              and opinions for my company. The training was absolutely worth it.
-            </p>
-            <div className="mt-5 flex flex-row items-center gap-2">
-              <img
-                src="/images/photo_avatar_male.jpeg"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
+                {/* Quote text */}
+                <p className="text-sm text-white/60 leading-relaxed flex-1">
+                  {t.quote}
+                </p>
 
-              <p className="flex flex-col gap-0.5">
-                <span className="font-semibold">Efe John</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              I had a deadline for submitting a Statement of Purpose in a
-              research-intensive university in the UK for master’s admissions. I
-              never knew the work could be completed within such a short time.
-              Pookers was my hope when I had none
-            </p>
-            <div className="mt-5 flex flex-row items-center gap-2">
-              <img
-                src="/images/photo_avatar_female.png"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5 h-fit"
-              />
+                <div className="h-px bg-white/10 w-full" />
 
-              <p className="flex flex-col gap-0.5">
-                <span className="font-semibold">Sandra</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              I had serious reservations about virtual classes. So, when I was
-              informed that the 21-day Elegant Writing Course would be virtual,
-              I was scared of enrolling because I preferred physical classes.
-              However, to my greatest surprise, when the training commenced, it
-              was more or less like a physical session, as everyone was carried
-              along. The training opened my eyes to common mistakes and gave me
-              a thorough grasp of the proper use of punctuation marks. I’m glad
-              I {`didn't`} miss the great opportunity, and I will recommend any
-              {`Pookers's`} writing course to anyone willing to be an elegant
-              writer
-            </p>
-            <div className="mt-5 flex flex-row gap-2 items-center">
-              <img
-                src="/images/photo_avatar_female.png"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
-
-              <p className="flex flex-col gap-1.5">
-                <span className="font-semibold">Titilope, Oluwatayo</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              Since I engaged Pookers for weekly reports and articles on my
-              youth campaign programmes, the result has been tremendous. You are
-              the best! writer
-            </p>
-            <div className="mt-5 flex flex-row gap-2 items-center">
-              <img
-                src="/images/photo_avatar_male.jpeg"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
-
-              <p className="flex flex-col gap-1.5">
-                <span className="font-semibold">Oludamola, Ogidan</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-md border border-gray-200 w-[400px] p-5 h-fit">
-            <div className="flex w-full justify-end text-gray-400">
-              <Quote />
-            </div>
-            <p className="text-[12px] md:text-sm">
-              I recently had the privilege of participating in The Business of
-              Ghostwriting training, and it was a truly transformative
-              experience. The program was mind-blowing, and I gained invaluable
-              insights into the art of ghostwriting. One of the key takeaways
-              for me is the importance of carving out a writing niche and
-              harnessing my writing skills to stand out in the industry. I am
-              deeply grateful to Pookers for delivering such as high-quality
-              program, especially in today’s era where many people have
-              neglected their writing skills. This training has reignited my
-              passion for writing, and I’m eager to apply the skills I’ve
-              learned. I wholeheartedly recommend Pookers’s training to anyone
-              looking to elevate their writing skills and take their writing to
-              the next level.
-            </p>
-            <div className="mt-5 flex flex-row gap-2 items-center">
-              <img
-                src="/images/photo_avatar_female.png"
-                alt="customer avatar"
-                className="border-2 border-blue-600 rounded-full w-[50px] p-1.5"
-              />
-
-              <p className="flex flex-col gap-1.5">
-                <span className="font-semibold">Chioma, Okonkwo</span>
-                <span className="text-sm">Client</span>
-              </p>
-            </div>
+                {/* Avatar + name */}
+                <div className="flex items-center gap-3">
+                  <img
+                    src={t.avatar}
+                    alt={t.name}
+                    className="w-9 h-9 rounded-full object-cover border border-white/20"
+                  />
+                  <div className="flex flex-col">
+                    <span className="text-sm font-medium text-white">
+                      {t.name}
+                    </span>
+                    <span className="text-xs text-white/40">{t.role}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

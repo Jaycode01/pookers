@@ -2,71 +2,111 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Pookers from "../../public/images/pooker.png";
-import { Copyright } from "lucide-react";
 
 export default function Footer() {
   return (
-    <>
-      <div className="bg-gray-300 px-[5%] py-10 flex flex-col gap-7">
-        <div className="flex flex-col gap-5 md:flex-row justify-between">
-          <div className="flex flex-col gap-3">
-            <Image src={Pookers} alt="pookers logo" width={150} />
-            <p className="w-full md:w-1/2">
+    <footer className="bg-gray-900 px-[5%] py-14">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10">
+        {/* Top */}
+        <div className="flex flex-col md:flex-row justify-between gap-10">
+          {/* Brand */}
+          <div className="flex flex-col gap-4 max-w-xs">
+            <Image src={Pookers} alt="Pookers logo" width={130} />
+            <p className="text-sm text-white/40 leading-relaxed">
               At Pookers, we believe words matter. We help you write, edit, and
               communicate with clarity and confidence — for projects that truly
               resonate.
             </p>
           </div>
-          <div className="flex flex-col gap-2 md:gap-5">
-            <h2 className="text-[18px] font-semibold">Company</h2>
-            <ul className="flex flex-col gap-1 md:gap-1.5 text-sm">
-              <li className="">
-                <Link href="/about">About Us</Link>
-              </li>
-              <li className="">
-                <Link href="/request">Request Services</Link>
-              </li>
-              <li className="">
-                <Link href="/contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
 
-          <div className="flex flex-col gap-2 md:gap-5">
-            <h2 className="text-[18px] font-semibold">Social Handles</h2>
-            <ul className="flex flex-col gap-1 md:gap-1.5 text-sm">
-              <li className="">
-                <Link href="https://www.instagram.com/pookersworld?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                  Instagram
-                </Link>
-              </li>
-              <li className="">
-                <Link href="https://x.com/pookersworld">Twitter</Link>
-              </li>
-              <li className="">
-                <Link href="https://facebook.com/pookerseditorial">
-                  Facebook
-                </Link>
-              </li>
-            </ul>
+          {/* Links */}
+          <div className="flex flex-row gap-16 md:gap-24">
+            <div className="flex flex-col gap-4">
+              <p className="text-xs uppercase tracking-widest text-white/30">
+                Company
+              </p>
+              <ul className="flex flex-col gap-2.5 text-sm text-white/60">
+                <li>
+                  <Link
+                    href="/about"
+                    className="hover:text-white transition-colors"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/request"
+                    className="hover:text-white transition-colors"
+                  >
+                    Request Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="hover:text-white transition-colors"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="text-xs uppercase tracking-widest text-white/30">
+                Socials
+              </p>
+              <ul className="flex flex-col gap-2.5 text-sm text-white/60">
+                <li>
+                  <Link
+                    href="https://www.instagram.com/pookersworld"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
+                  >
+                    Instagram
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://x.com/pookersworld"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
+                  >
+                    Twitter / X
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://facebook.com/pookerseditorial"
+                    target="_blank"
+                    className="hover:text-white transition-colors"
+                  >
+                    Facebook
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="flex items-center gap-1.5 md:gap-3.5 justify-center w-full text-sm">
-          <p className="flex flex-row items-center gap-1">
-            <Copyright />
-            <span>2025, Pookers.</span>
-          </p>
-          <p className="">
+
+        {/* Divider */}
+        <div className="h-px bg-white/10 w-full" />
+
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/30">
+          <p>© 2025 Pookers Literary & Editing World. All rights reserved.</p>
+          <p>
             Built with 🤍 by{" "}
             <Link
               href="mailto:josephlamidijoslam@gmail.com"
-              className="text-white"
+              className="text-white/50 hover:text-white transition-colors"
             >
               Nexon
             </Link>
           </p>
         </div>
       </div>
-    </>
+    </footer>
   );
 }
