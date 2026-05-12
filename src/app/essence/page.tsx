@@ -2,71 +2,109 @@ import Footer from "@/components/footer";
 import { Eye, Goal } from "lucide-react";
 import React from "react";
 
+const cards = [
+  {
+    icon: Eye,
+    title: "Vision",
+    body: [
+      "To provide writing and editing services with distinction to local and international clients.",
+      "To raise a new generation of freelance writers and editors who uphold originality in the teeming world of artificial intelligence.",
+    ],
+    tag: "Where we're going",
+    iconBg: "bg-blue-50",
+    iconColor: "#185fa5",
+    tagClass: "bg-blue-50 text-blue-900",
+  },
+  {
+    icon: Goal,
+    title: "Mission",
+    body: [
+      "Having noticed the English-language and communication gap in our current world, we — as people of letters — have decided to render literary and editing services with simplicity and style to clients who want to save themselves from embarrassing writing errors in social, corporate, and academic spaces.",
+    ],
+    tag: "Why we exist",
+    iconBg: "bg-amber-50",
+    iconColor: "#854f0b",
+    tagClass: "bg-amber-50 text-amber-900",
+  },
+];
+
 export default function Essence() {
   return (
-    <>
-      <div className="bg-gray-100 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-[5%] py-7 md:py-12">
-          <div
-            data-aos="fade-up"
-            className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <Eye
-                size={30}
-                className="text-gray-900 group-hover:text-white transition-colors duration-300"
-              />
-              <h2 className="text-gray-900 text-[20px] md:text-[25px] group-hover:text-white transition-colors duration-300">
-                Vision
-              </h2>
-            </div>
-            <p className="text-gray-700 group-hover:text-white transition-colors duration-300 text-sm md:text[16px]">
-              <span>
-                To provide writing and editing services with distinction to
-                local and international clients.
-              </span>
-              <br />
-              <span>
-                To raise a new generation of freelance writers and editors who
-                uphold originality in the teeming world of artificial
-                intelligence.
-              </span>
+    <div>
+      <section className="bg-[#f7f6f2] py-16 md:py-24 px-[5%]">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
+              Our essence
             </p>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+              <h2
+                data-aos="fade-right"
+                className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug max-w-sm"
+              >
+                Vision & mission.
+              </h2>
+              <p className="text-sm text-gray-400 max-w-xs leading-relaxed italic font-playfair">
+                — Error-free writing is our priority.
+              </p>
+            </div>
+            <div className="mt-6 h-px bg-gray-200 w-full" />
           </div>
 
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            className="group bg-white p-5 border border-gray-200 flex flex-col gap-5 justify-center items-center shadow-md hover:bg-blue-600 transition-colors duration-300"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <Goal
-                size={30}
-                className="etxt-gray-900 group-hover:text-white transition-colors duration-300"
-              />
-              <h2 className="text-gray-900 text-[20px] md:text-[25px] group-hover:text-white transition-colors duration-300">
-                Mission
-              </h2>
-            </div>
-            <p className="text-gray-700 group-hover:text-white transition-colors duration-300 text-sm md:text[16px]">
-              Having noticed the English-language and communication gap existent
-              in our current world, we, as people of letters, have decided to
-              render literary and editing services with simplicity and style to
-              clients who are interested in saving themselves from embarrassing
-              writing errors in social, corporate and academic space.
-            </p>
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {cards.map(
+              (
+                { icon: Icon, title, body, tag, iconBg, iconColor, tagClass },
+                i,
+              ) => (
+                <div
+                  key={title}
+                  data-aos="fade-up"
+                  data-aos-delay={i * 150}
+                  className="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col gap-6 hover:-translate-y-0.5 hover:shadow-md transition-all duration-150"
+                >
+                  {/* Icon + tag row */}
+                  <div className="flex items-center justify-between">
+                    <div
+                      className={`w-10 h-10 rounded-xl flex items-center justify-center ${iconBg}`}
+                    >
+                      <Icon size={18} color={iconColor} strokeWidth={1.5} />
+                    </div>
+                    <span
+                      className={`text-xs font-medium px-2.5 py-1 rounded-full ${tagClass}`}
+                    >
+                      {tag}
+                    </span>
+                  </div>
+
+                  {/* Title */}
+                  <h2 className="font-playfair text-2xl md:text-3xl font-medium text-gray-900">
+                    {title}
+                  </h2>
+
+                  <div className="h-px bg-gray-100 w-full" />
+
+                  {/* Body */}
+                  <div className="flex flex-col gap-3">
+                    {body.map((para, j) => (
+                      <p
+                        key={j}
+                        className="text-sm text-gray-500 leading-relaxed"
+                      >
+                        {para}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ),
+            )}
           </div>
         </div>
-        <p
-          data-aos="flip-left"
-          className="italic flex justify-end w-full pr-[5%] text-[10px] md:text-[16px]"
-        >
-          - Error-free writing is our priority
-        </p>
-      </div>
-      <div className="mt-5">
-        <Footer />
-      </div>
-    </>
+      </section>
+
+      <Footer />
+    </div>
   );
 }
