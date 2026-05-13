@@ -12,7 +12,7 @@ const services = [
     icon: IconPencil,
     title: "Copywriting",
     description:
-      "Persuasive copy for websites, ads, and marketing materials that speaks directly to your audience.",
+      "Persuasive copywriting for Nigerian businesses — websites, ads, and marketing materials written to speak directly to your audience and drive real action",
     tag: "Writing",
     tagClass: "bg-blue-50 text-blue-900",
     iconBg: "bg-blue-50",
@@ -22,7 +22,7 @@ const services = [
     icon: IconEdit,
     title: "Proofreading & Editing",
     description:
-      "Line-by-line editing for clarity, tone, and grammar — from blog posts to full manuscripts.",
+      "Professional proofreading and editing services in Lagos — line-by-line review for clarity, tone, and grammar across blog posts, business documents, and full manuscripts.",
     tag: "Editing",
     tagClass: "bg-green-50 text-green-900",
     iconBg: "bg-green-50",
@@ -32,7 +32,7 @@ const services = [
     icon: IconFileText,
     title: "Content Strategy",
     description:
-      "A clear content plan aligned to your brand goals — topics, cadence, and distribution.",
+      "A clear content strategy aligned to your brand goals — topics, publishing schedule, and distribution plan built specifically for Nigerian businesses and brands.",
     tag: "Strategy",
     tagClass: "bg-amber-50 text-amber-900",
     iconBg: "bg-amber-50",
@@ -42,7 +42,7 @@ const services = [
     icon: IconBook,
     title: "Ghost Writing",
     description:
-      "Articles, thought-leadership pieces, and long-form content written in your voice.",
+      "Professional ghostwriting services in Nigeria — articles, thought-leadership pieces, and long-form content written in your voice, fully credited to you.",
     tag: "Writing",
     tagClass: "bg-blue-50 text-blue-900",
     iconBg: "bg-blue-50",
@@ -52,7 +52,7 @@ const services = [
     icon: IconSpeakerphone,
     title: "Brand Messaging",
     description:
-      "Taglines, brand voice guides, and positioning statements that make you memorable.",
+      "Taglines, brand voice guides, and positioning statements for Nigerian businesses and startups that make you instantly recognizable and memorable.",
     tag: "Branding",
     tagClass: "bg-pink-50 text-pink-900",
     iconBg: "bg-pink-50",
@@ -62,7 +62,7 @@ const services = [
     icon: IconFileText,
     title: "SEO Content",
     description:
-      "Search-optimised blog posts and landing pages built to rank and convert.",
+      "Search-optimised blog posts and landing pages built to rank and convert.Search-optimised blog posts and landing pages for Nigerian businesses — built to rank on Google and convert visitors into paying customers.",
     tag: "SEO",
     tagClass: "bg-green-50 text-green-900",
     iconBg: "bg-green-50",
@@ -78,17 +78,18 @@ export default function ServicesSection() {
         <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
-              What we do
+              What We Do
             </p>
             <h2 className="text-3xl font-medium text-gray-900 leading-snug max-w-sm">
-              Services that get your words working.
+              Editorial & Writing Services That Get Your Words Working in
+              Nigeria.
             </h2>
           </div>
           <a
             href="/contact"
             className="inline-flex items-center gap-2 bg-blue-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-85 transition-opacity"
           >
-            Work with us
+            Request a Service
             <IconArrowRight size={16} />
           </a>
         </div>

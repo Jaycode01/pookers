@@ -7,10 +7,10 @@ const cards = [
     icon: Eye,
     title: "Vision",
     body: [
-      "To provide writing and editing services with distinction to local and international clients.",
-      "To raise a new generation of freelance writers and editors who uphold originality in the teeming world of artificial intelligence.",
+      "To become the most trusted professional writing and editing service for local and international clients — delivering distinction, originality, and excellence in every project.",
+      "To raise a new generation of Nigerian freelance writers and editors who uphold originality, quality, and integrity in an increasingly AI-driven world.",
     ],
-    tag: "Where we're going",
+    tag: "Where We're Going",
     iconBg: "bg-blue-50",
     iconColor: "#185fa5",
     tagClass: "bg-blue-50 text-blue-900",
@@ -19,9 +19,9 @@ const cards = [
     icon: Goal,
     title: "Mission",
     body: [
-      "Having noticed the English-language and communication gap in our current world, we — as people of letters — have decided to render literary and editing services with simplicity and style to clients who want to save themselves from embarrassing writing errors in social, corporate, and academic spaces.",
+      "At Pookers, we exist to close the English-language and communication gap that holds individuals, businesses, and academics back. As experienced editorial professionals based in Lagos, Nigeria, we deliver literary and editing services with simplicity, style, and precision — helping clients across corporate, academic, and social spaces eliminate embarrassing writing errors and communicate with confidence.",
     ],
-    tag: "Why we exist",
+    tag: "Why We Exist",
     iconBg: "bg-amber-50",
     iconColor: "#854f0b",
     tagClass: "bg-amber-50 text-amber-900",
@@ -36,17 +36,18 @@ export default function Essence() {
           {/* Header */}
           <div className="mb-12">
             <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-              Our essence
+              Our Essence
             </p>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <h2
                 data-aos="fade-right"
                 className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug max-w-sm"
               >
-                Vision & mission.
+                Our Vision & Mission
               </h2>
               <p className="text-sm text-gray-400 max-w-xs leading-relaxed italic font-playfair">
-                — Error-free writing is our priority.
+                — Error-free, professional writing for every Nigerian and
+                international client we serve.
               </p>
             </div>
             <div className="mt-6 h-px bg-gray-200 w-full" />

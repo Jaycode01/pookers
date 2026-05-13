@@ -6,7 +6,7 @@ const values = [
   {
     icon: MicVocal,
     title: "Speech Writing",
-    desc: "From graduation to keynote — we craft speeches that captivate, inspire, and leave a lasting impression. Tailored to your voice, your audience, and your moment.",
+    desc: "From graduation ceremonies to corporate keynotes — we craft speeches that captivate, inspire, and leave a lasting impression. Tailored to your voice, your audience, and your moment.",
     tag: "Oratory",
     tagClass: "bg-blue-50 text-blue-900",
     iconBg: "bg-blue-50",
@@ -15,7 +15,7 @@ const values = [
   {
     icon: Briefcase,
     title: "Employment Service",
-    desc: "Tailored CVs, compelling cover letters, and personal branding that present you as the best candidate — on paper and in person.",
+    desc: "Professionally written CVs, cover letters, and personal branding documents that position you as the strongest candidate — for Nigerian and international job markets.",
     tag: "Career",
     tagClass: "bg-amber-50 text-amber-900",
     iconBg: "bg-amber-50",
@@ -24,7 +24,7 @@ const values = [
   {
     icon: GraduationCap,
     title: "Literary Training",
-    desc: "Intensive programs that sharpen your writing, editing, and storytelling. Practical lessons, expert feedback, real-world exercises.",
+    desc: "Professionally written CVs, cover letters, and personal branding documents that position you as the strongest candidate — for Nigerian and international job markets.",
     tag: "Training",
     tagClass: "bg-green-50 text-green-900",
     iconBg: "bg-green-50",
@@ -33,7 +33,7 @@ const values = [
   {
     icon: Globe,
     title: "Web Content",
-    desc: "SEO-friendly, audience-focused web copy — landing pages, service descriptions, blogs — that boosts visibility and drives action.",
+    desc: "SEO-optimised, audience-focused web copy for Nigerian businesses — landing pages, service descriptions, and blog content that boosts Google visibility and drives real action.",
     tag: "Digital",
     tagClass: "bg-pink-50 text-pink-900",
     iconBg: "bg-pink-50",
@@ -48,18 +48,19 @@ export default function Value() {
         {/* Header */}
         <div className="mb-12">
           <p className="text-xs uppercase tracking-widest text-white/40 mb-3">
-            Why choose us
+            Why Choose Pookers
           </p>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <h2
               data-aos="fade-right"
               className="font-playfair text-4xl md:text-5xl font-medium text-white leading-snug max-w-sm"
             >
-              Built around your words.
+              Professional Editorial Services Built Around Your Words.
             </h2>
             <p className="text-sm text-white/40 max-w-xs leading-relaxed">
-              Every service we offer is designed to make your writing work
-              harder for you.
+              Every service we offer is designed to make your writing more
+              powerful, credible, and impactful — for individuals and businesses
+              across Nigeria.
             </p>
           </div>
           <div className="mt-6 h-px bg-white/10 w-full" />

@@ -43,37 +43,37 @@ export default function Service() {
               {
                 icon: Brain,
                 title: "Research",
-                desc: "Expert-level essays, journal articles, and academic papers with a professional touch.",
+                desc: "Expert research papers, journal articles, and academic essays written to professional and institutional standards — for students and scholars across Nigeria.",
               },
               {
                 icon: BookOpen,
                 title: "Book Writing & Ghostwriting",
-                desc: "We pen your story or idea — you take the credit, fully and rightfully.",
+                desc: "We write your book, story, or idea from start to finish — you take full credit. Professional ghostwriting services in Lagos.",
               },
               {
                 icon: FaLaptopFile,
                 title: "Copyediting & Proofreading",
-                desc: "Manuscripts free of grammatical, stylistic, and content errors — guaranteed.",
+                desc: "Professional proofreading and copyediting services that eliminate grammatical, stylistic, and structural errors from your manuscript — guaranteed",
               },
               {
                 icon: Compass,
                 title: "Statement of Purpose / Letter of Motivation",
-                desc: "Stand out for overseas admissions with a compelling, tailored SOP.",
+                desc: "Stand out in overseas university admissions with a compelling, tailored Statement of Purpose written by experienced editors in Nigeria.",
               },
               {
                 icon: File,
                 title: "CV & Cover Letter",
-                desc: "Mind-blowing CVs and cover letters that open doors.",
+                desc: "Professionally written CVs and cover letters designed to get you noticed and land more interviews — crafted for Nigerian and international job markets.",
               },
               {
                 icon: NotebookPen,
                 title: "Blurb Writing",
-                desc: "Compelling blurbs that hook readers and drive sales for authors.",
+                desc: "Persuasive book blurbs that hook readers instantly and drive sales — written for Nigerian authors and self-publishers.",
               },
               {
                 icon: GraduationCap,
                 title: "Intensive Literary Training",
-                desc: "We train people to become sharper writers and more confident editors.",
+                desc: "Practical writing and editing training for individuals who want to become sharper, more confident communicators in professional and academic settings.",
               },
             ].map(({ icon: Icon, title, desc }, i) => (
               <div
@@ -107,7 +107,7 @@ export default function Service() {
             >
               <Image
                 src="/images/photo1_service.avif"
-                alt="Services Image One"
+                alt="Professional editorial and proofreading services in Lagos Nigeria"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 width={600}
                 height={400}
@@ -119,7 +119,7 @@ export default function Service() {
             >
               <Image
                 src="/images/photo2_service.avif"
-                alt="Services Image Two"
+                alt="Pookers editing team working on manuscripts and business documents"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 width={600}
                 height={400}

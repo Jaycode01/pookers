@@ -25,15 +25,15 @@ export default function Hero() {
               data-aos="fade-right"
               className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug"
             >
-              Struggling with writing? We&apos;ve got you covered.
+              Professional Proofreading & Editing Services in Nigeria
             </h1>
             <p
               data-aos="fade-up"
               className="text-sm md:text-[15px] text-gray-500 leading-relaxed max-w-md"
             >
-              Our team of experienced editors and writers helps you articulate
-              your ideas with precision and impact — whether it&apos;s an
-              academic thesis, business proposal, or creative manuscript.
+              From academic theses to business proposals and creative
+              manuscripts — Pookers connects you with experienced editors and
+              writers in Lagos who deliver precision, clarity, and impact.
             </p>
             <div className="flex flex-row gap-3 mt-2">
               <Link href="#editted-books">

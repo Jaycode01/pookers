@@ -9,12 +9,12 @@ const coreValues = [
   {
     icon: Star,
     title: "Originality",
-    desc: "You can be sure that our writing is plagiarism-free.",
+    desc: "Every piece we deliver is 100% plagiarism-free — original writing you can submit, publish, or present with full confidence.",
   },
   {
     icon: Brain,
     title: "Creativity",
-    desc: "Every task is approached with style and elegance.",
+    desc: "We approach every writing and editing task with style, precision, and creative intelligence.",
   },
   {
     icon: Cog,
@@ -30,7 +30,7 @@ export default function About() {
       <section className="relative h-[250px] md:h-[400px]">
         <Image
           src="/images/photo_bg_about.avif"
-          alt="About page background"
+          alt="Pookers editorial team in Lagos Nigeria providing professional writing and proofreading services"
           fill
           style={{ objectFit: "cover" }}
         />
@@ -60,7 +60,7 @@ export default function About() {
               data-aos="fade-right"
               className="font-playfair text-4xl md:text-5xl font-medium text-gray-900 leading-snug max-w-sm"
             >
-              Who we are.
+              Who We Are
             </h2>
             <div className="mt-6 h-px bg-gray-200 w-full" />
           </div>
@@ -73,24 +73,27 @@ export default function About() {
                 data-aos="fade-up"
                 className="text-sm text-gray-500 leading-relaxed"
               >
-                Pookers Literary & Editing World was established in 2018 out of
-                the burning desire to create original and error-free writing for
-                local and international clients who value top-quality services.
-                We offer elegant writing across a wide range of disciplines and
-                genres, and provide enviable editing services for writers,
-                authors, and aspiring authors.
+                Pookers Literary & Editing World is a professional editorial and
+                writing service based in Lagos, Nigeria. Founded in 2018, we
+                were built on a commitment to delivering original, error-free
+                writing for local and international clients who demand
+                top-quality results. We offer expert writing across a wide range
+                of disciplines and genres — and provide professional editing and
+                proofreading services for writers, authors, businesses, and
+                students across Nigeria.
               </p>
               <p
                 data-aos="fade-up"
                 className="text-sm text-gray-500 leading-relaxed"
               >
-                In the last 7 years, we have organised training such as the
-                Intensive Copywriting Masterclass, Elegant Writing, How to Write
-                Plagiarism-Free Proposals, and The Business of Ghostwriting —
-                among other specialised programs at basic, intermediate, and
-                advanced levels. We have trained scores of writers who now
-                render high-value writing and editing services at home and
-                abroad.
+                Pookers Literary & Editing World is a professional editorial and
+                writing service based in Lagos, Nigeria. Founded in 2018, we
+                were built on a commitment to delivering original, error-free
+                writing for local and international clients who demand
+                top-quality results. We offer expert writing across a wide range
+                of disciplines and genres — and provide professional editing and
+                proofreading services for writers, authors, businesses, and
+                students across Nigeria.
               </p>
 
               {/* Core Values */}
