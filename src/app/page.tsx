@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Professional Writing & Editing Services in Lagos | Pookers",
   description:
-    "Professional writing and editing services in Lagos, Nigeria. We help individuals, businesses and organizations improve their writing, editing and content quality.",
+    "Pookers offers professional proofreading, copyediting, ghostwriting, and editorial services for businesses, students, and individuals across Nigeria. Based in Lagos.",
   keywords:
     "writing services Lagos, editing services Nigeria, professional editors Lagos, content writing Nigeria, business writing Lagos, document editing services",
   robots: "index, follow",

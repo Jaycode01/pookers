@@ -3,6 +3,12 @@ import { BsGear } from "react-icons/bs";
 import ServicesSection from "@/components/services-section";
 import Footer from "@/components/footer";
 
+export const metadata = {
+  title: "Our Services — Proofreading, Editing & Writing Services in Lagos",
+  description:
+    "Explore Pookers' full range of editorial services — proofreading, copyediting, ghostwriting, SEO content, CV writing, and more for Nigerian businesses and individuals.",
+};
+
 const Services = () => {
   return (
     <>

@@ -2,6 +2,12 @@ import Footer from "@/components/footer";
 import { Eye, Goal } from "lucide-react";
 import React from "react";
 
+export const metadata = {
+  title: "Our Vision & Mission — Pookers Editorial Services",
+  description:
+    "Discover the vision and mission behind Pookers — delivering error-free, professional writing and editing services to clients across Nigeria and internationally.",
+};
+
 const cards = [
   {
     icon: Eye,
