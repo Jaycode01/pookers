@@ -63,43 +63,61 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setOpenMenu(!openMenu)}
-          className="md:hidden text-gray-900"
+          className="md:hidden text-gray-900 z-50 relative"
           aria-label="Toggle menu"
         >
           {openMenu ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Backdrop — clicking outside closes the menu */}
       {openMenu && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-[5%] py-6 flex flex-col gap-5">
-          {navLinks.map(({ label, href }) => {
-            const isActive = pathname === href;
-            return (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setOpenMenu(false)}
-                className={`text-sm transition-colors duration-150 ${
-                  isActive
-                    ? "text-gray-900 font-medium"
-                    : "text-gray-400 hover:text-gray-900"
-                }`}
-              >
-                {label}
-              </Link>
-            );
-          })}
-          <div className="h-px bg-gray-100 w-full" />
-          <Link
-            href="/request"
-            onClick={() => setOpenMenu(false)}
-            className="self-start bg-blue-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-85 transition-opacity"
-          >
-            Request a service
-          </Link>
-        </div>
+        <div
+          className="md:hidden fixed inset-0 top-[57px] bg-black/40 z-40"
+          onClick={() => setOpenMenu(false)}
+        />
       )}
+
+      {/* Mobile Menu Panel — overlays page content */}
+      <div
+        className={`
+          md:hidden fixed top-[57px] left-0 w-full bg-white z-40
+          border-t border-gray-100 shadow-lg
+          px-[5%] py-6 flex flex-col gap-5
+          transition-all duration-300 ease-in-out
+          ${
+            openMenu
+              ? "opacity-100 translate-y-0 pointer-events-auto"
+              : "opacity-0 -translate-y-2 pointer-events-none"
+          }
+        `}
+      >
+        {navLinks.map(({ label, href }) => {
+          const isActive = pathname === href;
+          return (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setOpenMenu(false)}
+              className={`text-sm transition-colors duration-150 ${
+                isActive
+                  ? "text-gray-900 font-medium"
+                  : "text-gray-400 hover:text-gray-900"
+              }`}
+            >
+              {label}
+            </Link>
+          );
+        })}
+        <div className="h-px bg-gray-100 w-full" />
+        <Link
+          href="/request"
+          onClick={() => setOpenMenu(false)}
+          className="self-start bg-blue-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-85 transition-opacity"
+        >
+          Request a service
+        </Link>
+      </div>
     </nav>
   );
 }

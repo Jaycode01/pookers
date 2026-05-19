@@ -5,12 +5,6 @@ import { Cog, House, Star, Brain } from "lucide-react";
 import Footer from "@/components/footer";
 import Image from "next/image";
 
-export const metadata = {
-  title: "About Us — Nigeria's Trusted Editorial & Writing Team",
-  description:
-    "Learn about Pookers Literary & Editing World — a professional editorial service founded in Lagos, Nigeria in 2018, serving local and international clients.",
-};
-
 const coreValues = [
   {
     icon: Star,
