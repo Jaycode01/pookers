@@ -3,6 +3,7 @@
 import React from "react";
 import { Cog, House, Star, Brain } from "lucide-react";
 import Footer from "@/components/footer";
+import Link from "next/link";
 import Image from "next/image";
 
 const coreValues = [
@@ -119,6 +120,9 @@ export default function About() {
                   ))}
                 </div>
               </div>
+              <Link href={`/services`} className="text-gray-400 text-sm">
+                Our Services
+              </Link>
             </div>
 
             {/* Right — Image */}

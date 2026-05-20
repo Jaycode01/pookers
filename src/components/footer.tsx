@@ -36,6 +36,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
+                    href="/services"
+                    className="hover:text-white transition-colors"
+                  >
+                    Our Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/request"
                     className="hover:text-white transition-colors"
                   >
@@ -48,6 +56,14 @@ export default function Footer() {
                     className="hover:text-white transition-colors"
                   >
                     Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/essence"
+                    className="hover:text-white transition-colors"
+                  >
+                    Mission & Vision
                   </Link>
                 </li>
               </ul>
