@@ -31,6 +31,74 @@ export default function RootLayout({
             `,
           }}
         />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Pookers Literary & Editing World",
+              image: "https://pookers.com.ng/images/pooker.png",
+              url: "https://pookers.com.ng",
+              telephone: "+2347030094966",
+              email: "pookerseditorial@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "5 Birrel Avenue, Sabo, Yaba",
+                addressLocality: "Lagos",
+                addressRegion: "Lagos State",
+                addressCountry: "NG",
+              },
+              sameAs: [
+                "https://www.instagram.com/pookersworld",
+                "https://x.com/pookersworld",
+                "https://facebook.com/pookerseditorial",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Writing and Editing Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Ghostwriting Services",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Proofreading and Editing Services",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "SOP Writing Services",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Copywriting Services",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "SEO Content Writing",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </head>
       <body className=" antialiased">
         <Navbar />
