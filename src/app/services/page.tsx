@@ -4,9 +4,9 @@ import ServicesSection from "@/components/services-section";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "Our Services — Proofreading, Editing & Writing Services in Lagos",
+  title: "Writing, Editing & Proofreading Services in Lagos",
   description:
-    "Explore Pookers' full range of editorial services — proofreading, copyediting, ghostwriting, SEO content, CV writing, and more for Nigerian businesses and individuals.",
+    "Professional writing, editing, proofreading, ghostwriting and SOP services in Lagos. Clear, error-free content for students, authors and businesses across Nigeria.",
 };
 
 const Services = () => {
@@ -27,8 +27,8 @@ const Services = () => {
             <span>/</span>
             <span>Services</span>
           </p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-medium text-white leading-snug max-w-sm">
-            Our Services
+          <h1 className="font-playfair text-2xl md:text-5xl font-medium text-white leading-snug max-w-md">
+            Professional Writing & Editing Services in Lagos
           </h1>
         </div>
       </section>
