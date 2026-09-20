@@ -43,7 +43,7 @@ export const services: Service[] = [
     iconColor: "#185fa5",
     // DRAFT: review and edit before publishing
     detail: {
-      metaTitle: "Professional Copywriting Services in Nigeria | Pookers",
+      metaTitle: "Professional Copywriting Services in Nigeria",
       metaDescription:
         "Persuasive copywriting for Nigerian businesses: website content, ads, landing pages and marketing materials that connect with your audience and drive action.",
       headline: "Professional Copywriting Services in Nigeria",
@@ -85,10 +85,9 @@ export const services: Service[] = [
     iconColor: "#3b6d11",
     // DRAFT: review and edit before publishing
     detail: {
-      metaTitle:
-        "Professional Proofreading & Editing Services in Lagos | Pookers",
+      metaTitle: "Proofreading & Editing Services in Lagos",
       metaDescription:
-        "Professional proofreading and editing in Lagos. We review manuscripts, business documents and articles line by line for grammar, clarity, tone and structure.",
+        "Professional proofreading and editing services in Lagos. We review manuscripts, business documents and articles for grammar, clarity, tone and structure.",
       headline: "Professional Proofreading & Editing Services in Lagos",
       intro:
         "Errors and unclear sentences cost you credibility. We review your writing line by line for grammar, clarity, tone and structure, so it reads the way you meant it to.",
@@ -126,9 +125,9 @@ export const services: Service[] = [
     iconColor: "#854f0b",
     // DRAFT: review and edit before publishing
     detail: {
-      metaTitle: "Content Strategy Services for Nigerian Brands | Pookers",
+      metaTitle: "Content Strategy Services for Nigerian Brands",
       metaDescription:
-        "Content strategy for Nigerian brands: topic planning, publishing schedule and a distribution plan built around your brand goals.",
+        "Content strategy for Nigerian brands — topic planning, publishing schedule and distribution plans built around your business goals.",
       headline: "Content Strategy Services for Nigerian Brands",
       intro:
         "Posting without a plan wastes time and budget. We build a clear content strategy around your brand goals, covering what to publish, when to publish it and where to share it.",
@@ -208,7 +207,7 @@ export const services: Service[] = [
     iconColor: "#6b21a8",
     // DRAFT: review and edit before publishing
     detail: {
-      metaTitle: "Professional SOP Writing Services in Nigeria | Pookers",
+      metaTitle: "SOP Writing Services in Nigeria",
       metaDescription:
         "Professional Statement of Purpose writing for Nigerian students applying to UK, US, Canadian and other international universities.",
       headline: "Professional SOP Writing Services in Nigeria",
@@ -249,9 +248,9 @@ export const services: Service[] = [
     iconColor: "#3b6d11",
     // DRAFT: review and edit before publishing
     detail: {
-      metaTitle: "SEO Content Writing Services in Nigeria | Pookers",
+      metaTitle: "SEO Content Writing Services in Nigeria",
       metaDescription:
-        "Search-optimised blog posts and landing pages for Nigerian businesses, written to rank on Google and turn visitors into customers.",
+        "Search-optimised blog posts and landing pages for Nigerian businesses — written to rank on Google and convert visitors into customers.",
       headline: "SEO Content Writing Services in Nigeria",
       intro:
         "Good content only works if the right people can find it. We write blog posts and landing pages built to rank on Google and turn visitors into paying customers.",
