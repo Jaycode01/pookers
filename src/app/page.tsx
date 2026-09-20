@@ -15,18 +15,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Professional Writing & Editing Services in Lagos | Pookers",
   description:
-    "Pookers offers professional proofreading, copyediting, ghostwriting, and editorial services for businesses, students, and individuals across Nigeria. Based in Lagos.",
-  keywords:
-    "writing services Lagos, editing services Nigeria, professional editors Lagos, content writing Nigeria, business writing Lagos, document editing services",
-  robots: "index, follow",
-  authors: [{ name: "Joseph Lamidi - Nexon" }],
+    "Professional proofreading, editing, ghostwriting, SOP writing and content services in Lagos. Helping students, authors and businesses across Nigeria communicate with clarity.",
   alternates: {
     canonical: "https://pookers.com.ng/",
   },
   openGraph: {
-    title: "Professional Writing & Editing Services | Pookers",
+    title: "Professional Writing & Editing Services in Lagos | Pookers",
     description:
-      "Professional writing and editing services in Lagos, Nigeria for businesses, students and organizations.",
+      "Professional proofreading, editing, ghostwriting and SOP services in Lagos, Nigeria.",
     type: "website",
     url: "https://pookers.com.ng",
   },

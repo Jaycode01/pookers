@@ -5,10 +5,11 @@ import AOSWrapper from "@/components/AOSWrapper";
 
 export const metadata: Metadata = {
   title: {
-    default: "Pookers | Writing & Editing Services",
+    default: "Professional Writing & Editing Services in Lagos | Pookers",
     template: "%s | Pookers",
   },
-  description: "Professional writing and editing services in Lagos, Nigeria.",
+  description:
+    "Professional writing, editing, proofreading, ghostwriting and SOP services in Lagos, Nigeria. Clear, original content for students, authors and businesses.",
 };
 
 export default function RootLayout({
